@@ -1,0 +1,33 @@
+{
+  "name": "bootstrap-theme",
+  "version": "0.0.0",
+  "description": "",
+  "style": "dist/css/bootstrap.css",
+  "main": "dist/js/bootstrap",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --display-error-details",
+    "docs-compile": "bundle exec jekyll build",
+    "docs-serve": "bundle exec jekyll serve",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "bootstrap": "^4.0.0-beta",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.5",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "popper.js": "^1.12.5",
+    "postcss-loader": "^2.0.6",
+    "precss": "^2.0.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.5"
+  }
+}
