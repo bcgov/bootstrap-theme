@@ -46,6 +46,12 @@ To build the styles, Javascript and other assets, use:
 npm run build
 ```
 
+Or for continous building:
+
+```bash
+npm run watch
+```
+
 ### Building Docs
 
 To build the docs (Jekyll), use:
@@ -60,4 +66,7 @@ Or for continuous building and serving:
 npm run docs-serve
 ```
 
+### Developer Workflow
+
+In two different shells, run `npm run watch` and `npm run docs-serve`.
 

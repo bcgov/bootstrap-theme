@@ -60,47 +60,4 @@ module.exports = {
     }),
   ],
 };
-/*
-module.exports = {
-  entry: ["./src/bootstrap-theme.js", "src/index.scss"],
-  output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bootstrap-theme.js'
-  },
-  module: {
 
-    rules: [
-      { // regular css files
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract({
-          loader: 'css-loader?importLoaders=1',
-        }),
-      },
-      { // sass / scss loader for webpack
-        test: /\.(sass|scss)$/,
-        loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
-      }
-    ]
-  },
-
-
-  plugins: [
-    new ExtractTextPlugin("dist/css/[name].css"),
-    new CleanWebpackPlugin(['dist'], {
-      root: __dirname,
-      verbose: true,
-      dry: false
-    }),
-    new CopyWebpackPlugin([
-      {
-        from: 'src/fonts',
-        to: '../fonts'
-      },
-      {
-        from: 'src/images',
-        to: '../images'
-      }
-    ])
-  ]
-};
-*/

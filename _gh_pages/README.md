@@ -18,10 +18,55 @@ First, we do accept pull requests and will promptly merge if they a fix or enhan
 of the relying applications.  Note, you should probably check out our issues and/or raise an issue before doing the pull
 request.
 
-### Device Setup
+### Tools Setup
 
 You'll need the following tools installed one your device to begin working on the theme:
 
-- [NodeJS 6](https://nodejs.org/en/) or greater with NPM 3 or greater
-- [Ruby](https://www.ruby-lang.org/en/downloads/) to compile the Jekyl docs
-- And obviously Git and GitHub account
+- [NodeJS 6](https://nodejs.org/en/) or greater with NPM 3 or greater to build
+- [Ruby](https://www.ruby-lang.org/en/downloads/) to build the Jekyl docs
+- And obviously Git client and GitHub account
+
+### First Install
+
+After your tools are in place, you should clone and install some packages:
+
+```bash
+git clone git@github.com:bcgov/bootstrap-theme.git
+cd bootstrap-theme
+npm install
+gem install bundler
+bundle install
+```
+
+### Building Dist
+
+To build the styles, Javascript and other assets, use:
+
+```bash
+npm run build
+```
+
+Or for continous building:
+
+```bash
+npm run watch
+```
+
+### Building Docs
+
+To build the docs (Jekyll), use:
+
+```bash
+npm run docs-compile
+``` 
+
+Or for continuous building and serving:
+
+```bash
+npm run docs-serve
+```
+
+### Developer Workflow
+
+In two different shells, run `npm run watch` and `npm run docs-serve`.
+

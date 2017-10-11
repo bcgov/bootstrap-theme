@@ -1,7 +1,11 @@
-
-body {
-  bg-color: black;
-}
-
 //---
 @import "~bootstrap/scss/bootstrap";
+
+//---
+// Variable overrides
+//---
+
+body {
+  background-color: yellow;
+}
+
