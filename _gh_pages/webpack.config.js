@@ -23,6 +23,17 @@ module.exports = {
       { // sass / scss loader for webpack
         test: /\.(sass|scss)$/,
         use: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './dist/fonts/[name].[ext]',
+            }
+          }
+        ]
       }
     ]
   },
@@ -45,20 +56,15 @@ module.exports = {
         to: 'dist/js/popper.js/'
       },
       {
-        from: 'src/fonts',
-        to: 'dist/fonts'
-      },
-      {
         from: 'src/images',
         to: 'dist/images'
       }
     ]),
-    /*
     new CleanWebpackPlugin(['dist'], {
       root: __dirname,
       verbose: true,
       dry: false
-    }),*/
+    }),
   ],
 };
 
