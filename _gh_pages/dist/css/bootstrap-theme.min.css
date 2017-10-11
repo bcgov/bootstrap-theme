@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Myriad-Pro';
-  src: url(./dist/fonts/MyriadWebPro.eot);
+  src: url(../fonts/MyriadWebPro.eot);
   /* IE9 Compat Modes */
-  src: url(./dist/fonts/MyriadWebPro.eot?#iefix) format("embedded-opentype"), url(./dist/fonts/MyriadWebPro.woff2) format("woff2"), url(./dist/fonts/MyriadWebPro.woff) format("woff"), url(./dist/fonts/MyriadWebPro.ttf) format("truetype"), url(./dist/fonts/MyriadWebPro.svg#svgFontName) format("svg");
+  src: url(../fonts/MyriadWebPro.eot?#iefix) format("embedded-opentype"), url(../fonts/MyriadWebPro.woff2) format("woff2"), url(../fonts/MyriadWebPro.woff) format("woff"), url(../fonts/MyriadWebPro.ttf) format("truetype"), url(../fonts/MyriadWebPro.svg#svgFontName) format("svg");
   /* Legacy iOS */ }
 
 /*!

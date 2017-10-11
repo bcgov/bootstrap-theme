@@ -4,9 +4,13 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: ['./src/bootstrap-theme.js', './src/bootstrap-theme.scss'],
+  context: __dirname + "/src",
+
+  entry: ['./bootstrap-theme.js', './styles/bootstrap-theme.scss'],
+
   output: {
-    filename: 'dist/js/bootstrap-theme.min.js'
+    path: __dirname + "/dist",
+    filename: 'js/bootstrap-theme.min.js'
   },
   module: {
 
@@ -30,7 +34,8 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './dist/fonts/[name].[ext]',
+              name: '[path][name].[ext]',
+              publicPath: '../'
             }
           }
         ]
@@ -39,25 +44,25 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({ // define where to save the file
-      filename: 'dist/css/bootstrap-theme.min.css',
+      filename: 'css/bootstrap-theme.min.css',
       allChunks: true,
     }),
     new CopyWebpackPlugin([
       {
-        from: 'node_modules/bootstrap/dist/js/',
-        to: 'dist/js/'
+        from: '../node_modules/bootstrap/dist/js/',
+        to: 'js/'
       },
       {
-        from: 'node_modules/jquery/dist/',
-        to: 'dist/js/jquery/'
+        from: '../node_modules/jquery/dist/',
+        to: 'js/jquery/'
       },
       {
-        from: 'node_modules/popper.js/dist/umd/',
-        to: 'dist/js/popper.js/'
+        from: '../node_modules/popper.js/dist/umd/',
+        to: 'js/popper.js/'
       },
       {
-        from: 'src/images',
-        to: 'dist/images'
+        from: 'images',
+        to: 'images'
       }
     ]),
     new CleanWebpackPlugin(['dist'], {
