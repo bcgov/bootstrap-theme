@@ -28,6 +28,7 @@ module.exports = {
         test: /\.(sass|scss)$/,
         use: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
       },
+      // Pull out all fonts because not all should be packaged because some browsers prefer different types
       {
         test: /\.(ttf|eot|woff|woff2|svg)$/,
         use: [
@@ -47,6 +48,7 @@ module.exports = {
       filename: 'css/bootstrap-theme.min.css',
       allChunks: true,
     }),
+    // We just copy these because the client may have already a dependency or choose a different JS package
     new CopyWebpackPlugin([
       {
         from: '../node_modules/bootstrap/dist/js/',

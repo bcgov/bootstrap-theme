@@ -1,0 +1,17 @@
+//---------------------------------------------------------------------------------------
+// Additions are for extra things not found in bootstrap like a new font!
+// WARNING: Do not create alot of new things here, remember always try to tweak and variable
+// or override bootstrap css before trying to create something new.
+//---------------------------------------------------------------------------------------
+
+// Declare primary font, we provide all types for various browsers/devices
+// the web browser will choose which one it wants ondemand instead of CSS onload
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: url('../fonts/MyriadWebPro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/MyriadWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/MyriadWebPro.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/MyriadWebPro.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/MyriadWebPro.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/MyriadWebPro.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
