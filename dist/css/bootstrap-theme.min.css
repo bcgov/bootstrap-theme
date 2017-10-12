@@ -79,7 +79,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #212529;
+  color: #494949;
   text-align: left;
   background-color: #fff; }
 
@@ -1909,7 +1909,7 @@ tbody.collapse.show {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #494949;
   text-align: left;
   list-style: none;
   background-color: #fff;
