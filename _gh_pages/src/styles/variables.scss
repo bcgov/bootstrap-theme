@@ -7,6 +7,21 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
+// Change theme-colors
+$theme-colors: ();
+$theme-colors: map-merge((
+  primary: #036,
+  secondary: #fcba19,
+  success: #486446,
+  info: #96c0e6,
+  warning: #f3cd65,
+  danger: #d8292f,
+  light: $gray-100,
+  dark: $gray-800,
+  primary-nav: #38598a,  // This is new
+  secondary-nav: #5475a7 // This is new too
+), $theme-colors);
+
 // Add our font as default
 $font-family-sans-serif: Myriad-Pro, Calibri, Arial, sans serif;
 $body-color: #494949;
@@ -19,19 +34,6 @@ $headings-color: #494949;
 $link-color:            #1a5a96;
 $link-decoration:       underline;
 $link-hover-color:      #00F;
-//$link-hover-decoration: underline !default;
 
-// Change theme-colors
-$theme-colors: ();
-$theme-colors: map-merge((
-  primary: #036,
-  secondary: #fcba19,
-  success: #486446,
-  info: #96c0e6,
-  warning: #f3cd65,
-  danger: #d8292f,
-  light: $gray-100,
-  dark: $gray-800,
-  primary-nav: #38598a,
-  secondary-nav: #5475a7
-), $theme-colors);
+// Breadcrumbs
+$breadcrumb-bg: transparent;
