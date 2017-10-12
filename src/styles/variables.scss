@@ -2,5 +2,21 @@
 // Variables from Bootstrap are change here, only CHANGED variables are here,
 // so if your looking for something, check out the varibles.scss file in bootstrap
 //---------------------------------------------------------------------------------------
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
 
+// Add our font as default
 $font-family-sans-serif: Myriad-Pro, Calibri, Arial, sans serif;
+
+// Change theme-colors
+$theme-colors: ();
+$theme-colors: map-merge((
+  primary: #036,
+  secondary: #fcba19,
+  success: #5cb85c,
+  info: #5bc0de,
+  warning: #f0ad4e,
+  danger: #d9534f,
+  light: $gray-100,
+  dark: $gray-800
+), $theme-colors);
