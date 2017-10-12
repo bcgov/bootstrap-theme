@@ -2,11 +2,23 @@
 // Variables from Bootstrap are change here, only CHANGED variables are here,
 // so if your looking for something, check out the varibles.scss file in bootstrap
 //---------------------------------------------------------------------------------------
+// Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
+
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
 // Add our font as default
 $font-family-sans-serif: Myriad-Pro, Calibri, Arial, sans serif;
+
+// Headings
+$headings-font-weight:   600;
+$headings-color: #494949;
+
+// Links
+$link-color:            #1a5a96;
+$link-decoration:       underline;
+$link-hover-color:      #00F;
+//$link-hover-decoration: underline !default;
 
 // Change theme-colors
 $theme-colors: ();
