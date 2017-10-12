@@ -45,7 +45,7 @@ toc: true
         </div>
 
         <div class="bs-component">
-          <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+          <nav class="navbar navbar-toggleable-md navbar-dark bg-primary-nav">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -75,7 +75,7 @@ toc: true
         </div>
 
         <div class="bs-component">
-          <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+          <nav class="navbar navbar-toggleable-md navbar-dark bg-secondary-nav">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>

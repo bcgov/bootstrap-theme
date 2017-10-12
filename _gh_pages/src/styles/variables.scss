@@ -25,10 +25,12 @@ $theme-colors: ();
 $theme-colors: map-merge((
   primary: #036,
   secondary: #fcba19,
-  success: #5cb85c,
-  info: #5bc0de,
-  warning: #f0ad4e,
-  danger: #d9534f,
+  success: #486446,
+  info: #96c0e6,
+  warning: #f3cd65,
+  danger: #d8292f,
   light: $gray-100,
-  dark: $gray-800
+  dark: $gray-800,
+  primary-nav: #38598a,
+  secondary-nav: #5475a7
 ), $theme-colors);
