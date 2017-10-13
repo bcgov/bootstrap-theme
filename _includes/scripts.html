@@ -1,3 +1,9 @@
 <script src="{{ site.baseurl }}/dist/js/jquery/jquery.slim.min.js"></script>
 <script src="{{ site.baseurl }}/dist/js/popper.js/popper.min.js"></script>
 <script src="{{ site.baseurl }}/dist/js/bootstrap.min.js"></script>
+<script>
+  // enable popovers everywhere
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+</script>

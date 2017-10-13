@@ -1142,14 +1142,19 @@ toc: true
       <div class="col-lg-12">
         <div class="page-header">
           <h1 id="dialogs">Dialogs</h1>
+          
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-6">
         <h2>Modals</h2>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+          Launch demo modal
+        </button>
         <div class="bs-component">
-          <div class="modal">
+          <div id="exampleModal" class="modal">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -1191,20 +1196,6 @@ toc: true
           <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Bottom</button>
 
           <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="source-modal" class="modal fade">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Source Code</h4>
-        </div>
-        <div class="modal-body">
-          <pre></pre>
         </div>
       </div>
     </div>
