@@ -12,8 +12,8 @@ permalink:      pretty
 source:         "."
 destination:    ./_gh_pages
 port:           9001
-baseurl:        ""
-url:            "https://github.com/bcgov/bootstrap-theme"
+baseurl:        "/bootstrap-theme/"
+url:            "https://bcgov.github.io/bootstrap-theme/"
 encoding:       UTF-8
 exclude:
   - .git
