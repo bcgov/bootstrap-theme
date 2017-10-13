@@ -4,5 +4,8 @@
 // Import the variables we override bootstrap with
 @import "variables";
 
+// Import any class overrides
+@import "overrides";
+
 // Now bring in the bootstrap!
 @import "~bootstrap/scss/bootstrap";

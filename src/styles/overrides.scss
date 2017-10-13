@@ -1,0 +1,9 @@
+//---------------------------------------------------------------------------------------
+// Overrides Bootstrap classes are change here, consider changing a variable before
+// overriding classes.
+//---------------------------------------------------------------------------------------
+// Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
+
+p a {
+  text-decoration: underline;
+}
