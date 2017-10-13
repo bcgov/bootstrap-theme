@@ -974,15 +974,15 @@ toc: true
         <div class="bs-component">
           <ul class="list-group">
             <li class="list-group-item">
-              <span class="tag tag-default tag-pill float-xs-right">14</span>
+              <span>14</span>
               Cras justo odio
             </li>
             <li class="list-group-item">
-              <span class="tag tag-default tag-pill float-xs-right">2</span>
+              <span>2</span>
               Dapibus ac facilisis in
             </li>
             <li class="list-group-item">
-              <span class="tag tag-default tag-pill float-xs-right">1</span>
+              <span>1</span>
               Morbi leo risus
             </li>
           </ul>
