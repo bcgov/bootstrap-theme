@@ -1,5 +1,7 @@
 # 🚀 B.C. Government Bootstrap v4 Theme
 
+[Full pretty documentation and demostrations of the theme](https://bcgov.github.io/bootstrap-theme/) 
+
 Simply put, a Bootstrap v4 B.C. Government Look-and-Feel featuring:
 - 99% pure bootstrap, i.e., no custom classes
 - NPM, Yarn and Bower package manager integration
