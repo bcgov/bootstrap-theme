@@ -543,7 +543,7 @@ toc: true
             <div class="form-group is-valid">
               <label class="form-control-label" for="inputSuccess1">Input with success</label>
               <input type="text" class="form-control is-valid" id="inputSuccess1">
-              <div class="valid-feedback">Success! You've done it.</div>
+              <div>Success! You've done it.</div>
             </div>
 
             <div class="form-group is-invalid">
