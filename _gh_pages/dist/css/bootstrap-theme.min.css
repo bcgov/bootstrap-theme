@@ -8,12 +8,19 @@
 p a {
   text-decoration: underline; }
 
-header {
+header nav {
   background-color: #036;
   border-bottom: 2px solid #fcba19;
   -webkit-box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5);
   -moz-box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5);
-  box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5); }
+  box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5);
+  margin-bottom: 20px; }
+
+footer nav {
+  border-top: 2px solid #fcba19; }
+
+footer li {
+  border-left: 1px solid white; }
 
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
