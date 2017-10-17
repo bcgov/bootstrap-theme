@@ -8,7 +8,7 @@
 <title>Simple Demo &middot; B.C. Government Bootstrap Theme</title>
 
 <!-- Bootstrap Theme CSS -->
-<link href="/bootstrap-theme//dist/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="/bootstrap-theme/dist/css/bootstrap-theme.min.css" rel="stylesheet">
 
 <!-- Documentation extras -->
 <!-- Favicons -->
@@ -16,11 +16,31 @@
 
 
   </head>
-  <body data-spy="scroll" data-target=".bd-sidenav-active">
+  <body>
 
-    
-        <main id="content" role="main">
-            <div class="container">
+    <header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <div class="container">
+      <a class="navbar-brand" href="https://www2.gov.bc.ca">
+        <img src="/bootstrap-theme/dist/images/gov3_bc_logo.png" width="155" height="43" alt="B.C. Government Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/bootstrap-theme/">Home</span></a>
+          <a class="nav-item nav-link" href="/bootstrap-theme/docs/getting-started/introduction">Getting Started</a>
+          <a class="nav-item nav-link" href="/bootstrap-theme/docs/reference/simple">Theme Demo</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+    <div class="container">
 
   <div id="banner">
     <div class="row">
@@ -58,9 +78,10 @@
         <div>
           <h1 id="navbars">Navbars</h1>
         </div>
-
+          
         <div>
-          <nav class="navbar navbar-dark bg-primary-nav">
+          <h2>Expanded</h2>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary-nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -90,13 +111,14 @@
         </div>
 
         <div>
+          <h2>Collapsed</h2>
           <nav class="navbar navbar-dark bg-secondary-nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <a class="navbar-brand" href="#">Navbar</a>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
+            <div class="collapse navbar-collapse" id="navbarColor02">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -1137,20 +1159,10 @@
 </div>
 
 
-        </main>
-    
 
-    <footer class="text-muted">
-  <div class="container-fluid p-3 p-md-5">
-    <ul>
-      <li><a href="https://github.com/bcgov/bootstrap-theme">GitHub</a></li>
-    </ul>
-  </div>
-</footer>
-
-    <script src="/bootstrap-theme//dist/js/jquery/jquery.slim.min.js"></script>
-<script src="/bootstrap-theme//dist/js/popper.js/popper.min.js"></script>
-<script src="/bootstrap-theme//dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-theme/dist/js/jquery/jquery.slim.min.js"></script>
+<script src="/bootstrap-theme/dist/js/popper.js/popper.min.js"></script>
+<script src="/bootstrap-theme/dist/js/bootstrap.min.js"></script>
 <script>
   // enable popovers everywhere
   $(function () {

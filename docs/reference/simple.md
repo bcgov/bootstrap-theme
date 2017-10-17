@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: Simple Demo
 description: Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
 group: components
@@ -46,9 +46,10 @@ toc: true
         <div>
           <h1 id="navbars">Navbars</h1>
         </div>
-
+          
         <div>
-          <nav class="navbar navbar-dark bg-primary-nav">
+          <h2>Expanded</h2>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-primary-nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -78,13 +79,14 @@ toc: true
         </div>
 
         <div>
+          <h2>Collapsed</h2>
           <nav class="navbar navbar-dark bg-secondary-nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <a class="navbar-brand" href="#">Navbar</a>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
+            <div class="collapse navbar-collapse" id="navbarColor02">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
