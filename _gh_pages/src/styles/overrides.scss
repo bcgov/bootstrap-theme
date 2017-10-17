@@ -25,6 +25,10 @@ footer nav {
   border-top: 2px solid map-get($theme-colors, secondary);
 }
 
-footer li {
-  border-left: 1px solid white;
+footer li+li {
+  border-left: 1px solid #4b5e73;
+}
+
+footer .nav-link {
+  color: white !important;
 }
