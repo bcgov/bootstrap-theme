@@ -10,7 +10,7 @@ toc: true
 
 <div class="container">
 
-  <div class="page-header" id="banner">
+  <div id="banner">
     <div class="row">
       <div class="col-lg-8 col-md-7 col-sm-6">
         <h1>Simple Theme Reference</h1>
@@ -22,7 +22,7 @@ toc: true
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-4">
-        <div class="list-group table-of-contents">
+        <div class="list-group">
           <a class="list-group-item list-group-item-action" href="#navbars">Navbars</a>
           <a class="list-group-item list-group-item-action" href="#buttons">Buttons</a>
           <a class="list-group-item list-group-item-action" href="#typography">Typography</a>
@@ -40,16 +40,16 @@ toc: true
 
   <!-- Navbar
   ================================================== -->
-  <div class="bs-docs-section clearfix">
+  <div class="clearfix">
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="navbars">Navbars</h1>
         </div>
 
         <div>
-          <nav class="navbar navbar-toggleable-md navbar-dark bg-primary-nav">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <nav class="navbar navbar-dark bg-primary-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <a class="navbar-brand" href="#">Navbar</a>
@@ -78,8 +78,8 @@ toc: true
         </div>
 
         <div>
-          <nav class="navbar navbar-toggleable-md navbar-dark bg-secondary-nav">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <nav class="navbar navbar-dark bg-secondary-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <a class="navbar-brand" href="#">Navbar</a>
@@ -114,8 +114,8 @@ toc: true
 
   <!-- Buttons
   ================================================== -->
-  <div class="bs-docs-section">
-    <div class="page-header">
+  <div>
+    <div>
       <div class="row">
         <div class="col-lg-12">
           <h1 id="buttons">Buttons</h1>
@@ -286,10 +286,10 @@ toc: true
 
   <!-- Typography
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="typography">Typography</h1>
         </div>
       </div>
@@ -354,24 +354,16 @@ toc: true
           </blockquote>
         </div>
       </div>
-      <div class="col-lg-6">
-        <div>
-          <blockquote class="blockquote blockquote-reverse">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-          </blockquote>
-        </div>
-      </div>
     </div>
   </div>
 
   <!-- Tables
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
 
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="tables">Tables</h1>
         </div>
 
@@ -437,10 +429,10 @@ toc: true
 
   <!-- Forms
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="forms">Forms</h1>
         </div>
       </div>
@@ -522,20 +514,20 @@ toc: true
           </form>
         </div>
       </div>
-      <div class="col-lg-4 col-lg-offset-1">
+      <div class="col-lg-4">
 
           <form>
 
             <div class="form-group">
               <fieldset disabled>
-                <label class="control-label" for="disabledInput">Disabled input</label>
+                <label class="form-control-label" for="disabledInput">Disabled input</label>
                 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
               </fieldset>
             </div>
 
             <div class="form-group">
               <fieldset>
-                <label class="control-label" for="readOnlyInput">Readonly input</label>
+                <label class="form-control-label" for="readOnlyInput">Readonly input</label>
                 <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
               </fieldset>
             </div>
@@ -574,7 +566,7 @@ toc: true
             </div>
 
             <div class="form-group">
-              <label class="control-label">Input addons</label>
+              <label class="form-control-label">Input addons</label>
               <div class="form-group">
                 <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
                 <div class="input-group">
@@ -592,11 +584,11 @@ toc: true
 
   <!-- Navs
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
 
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="navs">Navs</h1>
         </div>
       </div>
@@ -628,7 +620,7 @@ toc: true
             </li>
           </ul>
           <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="home">
+            <div class="tab-pane fade active" id="home">
               <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
             </div>
             <div class="tab-pane fade" id="profile">
@@ -671,7 +663,7 @@ toc: true
         </div>
         <br>
         <div>
-          <ul class="nav nav-pills nav-stacked">
+          <ul class="nav nav-pills">
             <li class="nav-item">
               <a class="nav-link active" href="#">Active</a>
             </li>
@@ -803,11 +795,11 @@ toc: true
 
   <!-- Indicators
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
 
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="indicators">Indicators</h1>
         </div>
       </div>
@@ -891,11 +883,11 @@ toc: true
 
   <!-- Progress
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
 
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="progress">Progress</h1>
         </div>
 
@@ -962,11 +954,11 @@ toc: true
 
   <!-- Containers
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
 
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="containers">Containers</h1>
         </div>
         <div>
@@ -1022,12 +1014,12 @@ toc: true
         <div>
           <div class="list-group">
             <a href="#" class="list-group-item list-group-item-action active">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              <h4>List group item heading</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <h4 class="list-group-item-heading">List group item heading</h4>
-              <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+              <h4>List group item heading</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
             </a>
           </div>
         </div>
@@ -1066,11 +1058,11 @@ toc: true
 
   <!-- Dialogs
   ================================================== -->
-  <div class="bs-docs-section">
+  <div>
 
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-header">
+        <div>
           <h1 id="dialogs">Dialogs</h1>
           
         </div>
