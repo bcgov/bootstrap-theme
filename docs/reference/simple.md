@@ -1076,7 +1076,7 @@ toc: true
           Launch demo modal
         </button>
         <div>
-          <div id="exampleModal" class="modal">
+          <div id="exampleModal" class="modal fade">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
