@@ -6,6 +6,7 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 
+// Only paragraph links should be underlined
 p a {
   text-decoration: underline;
 }
@@ -21,14 +22,21 @@ header nav {
   margin-bottom: 20px;
 }
 
+header .nav-link {
+  color: white !important;
+}
+
+// Orange bar above footer
 footer nav {
   border-top: 2px solid map-get($theme-colors, secondary);
 }
 
+// Only sibling list items in footer get left border
 footer li+li {
   border-left: 1px solid #4b5e73;
 }
 
+// Have to ensure footer nav links are white
 footer .nav-link {
   color: white !important;
 }
