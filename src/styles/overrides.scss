@@ -40,3 +40,26 @@ footer li+li {
 footer .nav-link {
   color: white !important;
 }
+
+// Sticky footer
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 65px !important;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  //line-height: 40px; /* Vertically center the text there */
+
+}
+
+.footer .navbar-nav {
+
+}
