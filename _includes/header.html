@@ -3,14 +3,18 @@
     <!-- Navbar content -->
     <div class="container">
       <a class="navbar-brand" href="https://www2.gov.bc.ca">
-        <img src="{{ site.baseurl }}/dist/images/gov3_bc_logo.png" width="155" height="43" alt="B.C. Government Logo">
+        <img class="img-fluid d-none d-md-block" src="{{ site.baseurl }}/dist/images/gov3_bc_logo.png" alt="B.C. Government Logo">
+        <img class="img-fluid d-md-none" src="{{ site.baseurl }}/dist/images/gov3_bc_logo_small.png" alt="B.C. Government Logo">
       </a>
+      <div class="navbar-brand">
+        Bootstrap Theme
+      </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="{{ site.baseurl }}/">Home</span></a>
+          <a class="nav-item nav-link" href="{{ site.baseurl }}/">Home</a>
           <a class="nav-item nav-link" href="{{ site.baseurl }}/docs/getting-started/introduction">Getting Started</a>
           <a class="nav-item nav-link" href="{{ site.baseurl }}/docs/reference/simple">Theme Demo</a>
         </div>
