@@ -25,8 +25,9 @@ footer nav {
 footer li + li {
   border-left: 1px solid #4b5e73; }
 
-footer .nav-link {
-  color: white !important; }
+@media (min-width: 768px) {
+  footer .nav-link {
+    color: white !important; } }
 
 html {
   position: relative;

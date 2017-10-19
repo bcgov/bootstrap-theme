@@ -5,6 +5,7 @@
 // Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
 // Only paragraph links should be underlined
 p a {
@@ -32,13 +33,16 @@ footer nav {
 }
 
 // Only sibling list items in footer get left border
-footer li+li {
+footer li+li  {
   border-left: 1px solid #4b5e73;
 }
 
 // Have to ensure footer nav links are white
+
 footer .nav-link {
-  color: white !important;
+  @include media-breakpoint-up(md) {
+    color: white !important;
+  }
 }
 
 // Sticky footer
@@ -58,9 +62,5 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   //line-height: 40px; /* Vertically center the text there */
-
-}
-
-.footer .navbar-nav {
 
 }
