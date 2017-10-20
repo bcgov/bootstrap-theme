@@ -34,15 +34,15 @@ footer nav {
 
 // Only sibling list items in footer get left border
 footer li+li  {
-  border-left: 1px solid #4b5e73;
+  @include media-breakpoint-up(lg) {
+    border-left: 1px solid #4b5e73;
+  }
 }
 
 // Have to ensure footer nav links are white
 
 footer .nav-link {
-  @include media-breakpoint-up(md) {
     color: white !important;
-  }
 }
 
 // Sticky footer

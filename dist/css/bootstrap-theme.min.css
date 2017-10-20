@@ -22,12 +22,12 @@ header .nav-link {
 footer nav {
   border-top: 2px solid #fcba19; }
 
-footer li + li {
-  border-left: 1px solid #4b5e73; }
+@media (min-width: 992px) {
+  footer li + li {
+    border-left: 1px solid #4b5e73; } }
 
-@media (min-width: 768px) {
-  footer .nav-link {
-    color: white !important; } }
+footer .nav-link {
+  color: white !important; }
 
 html {
   position: relative;
