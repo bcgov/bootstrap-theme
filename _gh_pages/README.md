@@ -16,13 +16,13 @@ and leverage the latest [Bootstrap v4-beta](http://getbootstrap.com/).
 If you find yourself wanting to enhance or fix the theme you'll be interested reading this section on how to setup this 
 source on your local device.
 
-First, we do accept pull requests and will promptly merge if they a fix or enhancement if there make sense for the rest
+First, we do accept pull requests and will promptly merge fixes or enhancements if they make sense for the rest
 of the relying applications.  Note, you should probably check out our issues and/or raise an issue before doing the pull
 request.
 
 ### Tools Setup
 
-You'll need the following tools installed one your device to begin working on the theme:
+You'll need the following tools installed on your device to begin working on the theme:
 
 - [NodeJS 6](https://nodejs.org/en/) or greater with NPM 3 or greater to build
 - [Ruby](https://www.ruby-lang.org/en/downloads/) to build the Jekyl docs
