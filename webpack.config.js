@@ -26,7 +26,11 @@ module.exports = {
       },
       { // sass / scss loader for webpack
         test: /\.(sass|scss)$/,
-        use: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+        use: ExtractTextPlugin.extract([{
+          loader: "css-loader",
+          options: {
+            minimize: true
+          }}, 'sass-loader'])
       },
       // Pull out all fonts because not all should be packaged because some browsers prefer different types
       {
