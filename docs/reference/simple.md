@@ -15,7 +15,7 @@ toc: true
       <div class="col-lg-8 col-md-7 col-sm-6">
         <h1>Simple Theme Reference</h1>
         <p class="lead">
-          For a complete Bootstrap docs, see <a href="https://getbootstrap.com/docs/4.0/">bootstrap docs</a>
+          For complete Bootstrap documentation, see <a href="https://getbootstrap.com/docs/4.1/">The Official Site</a>.
         </p>
       </div>
       
