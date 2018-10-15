@@ -40,7 +40,7 @@ toc: true
 
   <!-- Navbar
   ================================================== -->
-
+  <hr>
   <div class="row mt-3">
     <div class="col-lg-12">
       <div>
@@ -115,6 +115,7 @@ toc: true
 
   <!-- Buttons
   ================================================== -->
+  <hr>
   <div class="mt-3">
     <div class="row">
       <div class="col-lg-12">
@@ -200,7 +201,7 @@ toc: true
           </div>
         </div>
 
-        <div>
+        <div class="mt-3">
           <button type="button" class="btn btn-primary btn-lg">Large button</button>
           <button type="button" class="btn btn-primary">Default button</button>
           <button type="button" class="btn btn-primary btn-sm">Small button</button>
@@ -285,6 +286,7 @@ toc: true
 
   <!-- Typography
   ================================================== -->
+  <hr>
   <div class="mt-3">
     <div class="row">
       <div class="col-lg-12">
@@ -358,6 +360,7 @@ toc: true
 
   <!-- Tables
   ================================================== -->
+  <hr>
   <div class="mt-3">
 
     <div class="row">
@@ -428,6 +431,7 @@ toc: true
 
   <!-- Forms
   ================================================== -->
+  <hr>
   <div class="mt-3">
     <div class="row">
       <div class="col-lg-12">
@@ -444,16 +448,16 @@ toc: true
             <fieldset>
               <legend>Legend</legend>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label class="control-label" for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label class="control-label" for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
               <div class="form-group">
-                <label for="exampleSelect1">Example select</label>
+                <label class="control-label" for="exampleSelect1">Example select</label>
                 <select class="form-control" id="exampleSelect1">
                   <option>1</option>
                   <option>2</option>
@@ -463,7 +467,7 @@ toc: true
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleSelect2">Example multiple select</label>
+                <label class="control-label" for="exampleSelect2">Example multiple select</label>
                 <select multiple class="form-control" id="exampleSelect2">
                   <option>1</option>
                   <option>2</option>
@@ -473,11 +477,11 @@ toc: true
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleTextarea">Example textarea</label>
+                <label class="control-label" for="exampleTextarea">Example textarea</label>
                 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
               </div>
               <div class="form-group">
-                <label for="exampleInputFile">File input</label>
+                <label class="control-label" for="exampleInputFile">File input</label>
                 <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
                 <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
               </div>
@@ -521,47 +525,47 @@ toc: true
 
             <div class="form-group">
               <fieldset disabled>
-                <label for="disabledInput">Disabled input</label>
+                <label class="control-label" for="disabledInput">Disabled input</label>
                 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
               </fieldset>
             </div>
 
             <div class="form-group">
               <fieldset>
-                <label for="readOnlyInput">Readonly input</label>
+                <label class="control-label" for="readOnlyInput">Readonly input</label>
                 <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
               </fieldset>
             </div>
 
             <div class="form-group is-valid">
-              <label for="inputSuccess1">Input with success</label>
+              <label class="control-label" for="inputSuccess1">Input with success</label>
               <input type="text" class="form-control is-valid" id="inputSuccess1">
               <div class="valid-feedback">Success! You've done it.</div>
             </div>
 
             <div class="form-group">
-              <label for="inputDanger1">Input with danger</label>
+              <label class="control-label" for="inputDanger1">Input with danger</label>
               <input type="text" class="form-control  is-invalid" id="inputDanger1">
               <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
             </div>
 
             <div class="form-group">
-              <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
+              <label class="col-form-label col-form-label-lg control-label" for="inputLarge">Large input</label>
               <input class="form-control form-control-lg" type="text" id="inputLarge">
             </div>
 
             <div class="form-group">
-              <label class="col-form-label" for="inputDefault">Default input</label>
+              <label class="col-form-label control-label" for="inputDefault">Default input</label>
               <input type="text" class="form-control" id="inputDefault">
             </div>
 
             <div class="form-group">
-              <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
+              <label class="col-form-label col-form-label-sm control-label" for="inputSmall">Small input</label>
               <input class="form-control form-control-sm" type="text" id="inputSmall">
             </div>
 
             <div class="form-group">
-              <label>Input addons</label>
+              <label class="control-label">Input addons</label>
               <div class="form-group">
                 <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
                 <div class="input-group">
@@ -583,6 +587,7 @@ toc: true
 
   <!-- Navs
   ================================================== -->
+  <hr>
   <div class="mt-3">
 
     <div class="row">
@@ -770,6 +775,7 @@ toc: true
 
   <!-- Indicators
   ================================================== -->
+  <hr>
   <div class="mt-3">
 
     <div class="row">
@@ -858,6 +864,7 @@ toc: true
 
   <!-- Progress
   ================================================== -->
+  <hr>
   <div class="mt-3">
 
     <div class="row">
@@ -929,6 +936,7 @@ toc: true
 
   <!-- Containers
   ================================================== -->
+  <hr>
   <div class="mt-3">
 
     <div class="row">
@@ -1019,7 +1027,7 @@ toc: true
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="card" style="width: 20rem;">
+        <div class="card">
           <h4 class="card-header">Card title</h4>
           <div class="card-body">
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -1029,12 +1037,33 @@ toc: true
           </div>
         </div>
       </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 
   <!-- Dialogs
   ================================================== -->
+  <hr>
   <div class="mt-3">
 
     <div class="row">
@@ -1046,7 +1075,7 @@ toc: true
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h2>Modals</h2>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -1074,7 +1103,7 @@ toc: true
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h2>Popovers</h2>
         <div style="margin-bottom: 3em;">
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
@@ -1086,6 +1115,8 @@ toc: true
 
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
         </div>
+      </div>
+      <div class="col-lg-4">
         <h2>Tooltips</h2>
         <div>
           <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>
