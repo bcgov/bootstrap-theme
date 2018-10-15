@@ -34,6 +34,8 @@ exclude:
   - package.json
   - package-lock.json
   - sache.json
+  - src
+  - webpack.config.json
 
 plugins:
   - jekyll-redirect-from
