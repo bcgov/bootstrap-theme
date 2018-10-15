@@ -7,11 +7,7 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// Only paragraph links should be underlined
-p a {
-  text-decoration: underline;
-}
-a.btn {
+.nav-link, .navbar-brand, .page-link, a.btn {
   text-decoration: none;
 }
 

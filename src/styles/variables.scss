@@ -29,18 +29,19 @@ $font-family-base: $font-family-sans-serif;
 $body-color: #494949;
 
 // Headings
-$headings-font-weight:   600;
-$headings-color: #494949;
+$headings-font-weight:  600;
+$headings-color:        #494949;
 
 // Links
+$link-decoration:       underline;
 $link-color:            #1a5a96;
 $link-hover-color:      #0f3355;
 
 // Breadcrumbs
 $breadcrumb-bg: transparent;
 
-$nav-link-padding-x: .8rem;
-$nav-link-padding-y: .4rem;
+$nav-link-padding-x:        .8rem;
+$nav-link-padding-y:        .4rem;
 $navbar-nav-link-padding-x: .8rem;
 $navbar-nav-link-padding-y: .4rem;
 
@@ -48,4 +49,3 @@ $pagination-color: theme-color('primary');
 $pagination-active-bg: theme-color('primary');
 $pagination-active-border-color: $pagination-active-bg;
 $nav-pills-link-active-bg: theme-color('primary');
-//background-color: $nav-pills-link-active-bg;

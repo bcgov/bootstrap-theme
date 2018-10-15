@@ -213,7 +213,7 @@ toc: true
           <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
         </p>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input type="checkbox" checked> Checkbox 1
@@ -227,7 +227,7 @@ toc: true
           </div>
         </div>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input type="radio" name="options" id="option1" checked> Radio 1
@@ -241,7 +241,7 @@ toc: true
           </div>
         </div>
 
-        <div>
+        <div class="mb-3">
           <div class="btn-group-vertical" data-toggle="buttons">
             <button type="button" class="btn btn-primary">Button</button>
             <button type="button" class="btn btn-primary">Button</button>
@@ -252,7 +252,7 @@ toc: true
           </div>
         </div>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-group" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-bcgold">Left</button>
             <button type="button" class="btn btn-bcgold">Middle</button>
@@ -260,7 +260,7 @@ toc: true
           </div>
         </div>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group" role="group" aria-label="First group">
               <button type="button" class="btn btn-secondary">1</button>
