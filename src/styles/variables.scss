@@ -10,16 +10,17 @@
 // Change theme-colors
 $theme-colors: ();
 $theme-colors: map-merge((
-  primary: #036,
-  secondary: #fcba19,
-  success: #486446,
+  primary: #38598a,
+  success: #43893E,
   info: #96c0e6,
-  warning: #f3cd65,
+  warning: #f9ca54,
   danger: #d8292f,
   light: $gray-100,
   dark: $gray-800,
-  primary-nav: #38598a,  // This is new
-  secondary-nav: #5475a7 // This is new too
+  // new entries
+  primary-nav: #036,
+  secondary-nav: #5475a7,
+  bcgold: #fcba19
 ), $theme-colors);
 
 // Add our font as default
@@ -33,7 +34,18 @@ $headings-color: #494949;
 
 // Links
 $link-color:            #1a5a96;
-$link-hover-color:      #00F;
+$link-hover-color:      #0f3355;
 
 // Breadcrumbs
 $breadcrumb-bg: transparent;
+
+$nav-link-padding-x: .8rem;
+$nav-link-padding-y: .4rem;
+$navbar-nav-link-padding-x: .8rem;
+$navbar-nav-link-padding-y: .4rem;
+
+$pagination-color: theme-color('primary');
+$pagination-active-bg: theme-color('primary');
+$pagination-active-border-color: $pagination-active-bg;
+$nav-pills-link-active-bg: theme-color('primary');
+//background-color: $nav-pills-link-active-bg;
