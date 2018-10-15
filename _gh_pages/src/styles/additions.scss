@@ -15,3 +15,9 @@
   url('../fonts/MyriadWebPro.ttf')  format('truetype'), /* Safari, Android, iOS */
   url('../fonts/MyriadWebPro.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+// The label element is no longer bolded by default, neither is this class defined
+.control-label {
+  font-weight: 700;
+}
+

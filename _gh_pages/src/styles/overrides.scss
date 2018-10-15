@@ -3,22 +3,18 @@
 // overriding classes.
 //---------------------------------------------------------------------------------------
 // Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
+
 @import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-// Only paragraph links should be underlined
-p a {
-  text-decoration: underline;
-}
-a.btn {
+.nav-link, .navbar-brand, .page-link, a.btn {
   text-decoration: none;
 }
 
 // Header, adds the gold bottom border and shadow
 header nav {
-  background-color: map-get($theme-colors, primary-nav);
-  border-bottom: 2px solid map-get($theme-colors, bcgold);
+  background-color: theme-color(primary-nav);
+  border-bottom: 2px solid theme-color(bcgold);
   margin-bottom: 20px;
   &.shadow {
     box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5);
@@ -27,12 +23,8 @@ header nav {
 
 // Set footer background, add gold border above
 footer nav {
-  background-color: map-get($theme-colors, primary-nav);
-  border-top: 2px solid map-get($theme-colors, bcgold);
-}
-
-header .nav-link, footer .nav-link {
-  color: white !important;
+  background-color: theme-color(primary-nav);
+  border-top: 2px solid theme-color(bcgold);
 }
 
 // Only sibling list items in footer get left border
@@ -57,7 +49,6 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
+  //height: 60px;
   //line-height: 40px; /* Vertically center the text there */
-
 }
