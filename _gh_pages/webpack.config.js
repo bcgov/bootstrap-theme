@@ -55,24 +55,12 @@ module.exports = {
     // We just copy these because the client may have already a dependency or choose a different JS package
     new CopyWebpackPlugin([
       {
-        from: '../node_modules/bootstrap/dist/js/',
-        to: 'js/'
-      },
-      {
-        from: '../node_modules/jquery/dist/',
-        to: 'js/jquery/'
-      },
-      {
-        from: '../node_modules/popper.js/dist/umd/',
-        to: 'js/popper.js/'
-      },
-      {
         from: 'images',
         to: 'images'
       },
       {
-        from: 'src/styles',
-        to: 'src/styles'
+        from: 'styles',
+        to: 'src'
       }
     ]),
     new CleanWebpackPlugin(['dist'], {
