@@ -30,7 +30,7 @@ $headings-font-weight:      600;
 // Links
 $link-decoration:           underline;
 $link-color:                #1a5a96;
-$link-hover-color:          #0f3355;
+$link-hover-color:          #0000f3;
 
 // Navbar - header and footer
 $nav-link-padding-x:        .8rem;
@@ -44,11 +44,11 @@ $navbar-dark-toggler-border-color: rgba(#fff, 0.6);
 $breadcrumb-bg: transparent;
 
 // Slightly darker borders
-$alert-border-level:        -8;
+$alert-border-level:        -7;
 
 // List groups
-$list-group-active-bg:      lighten(theme-color(secondary-nav), 15%);
-$list-group-active-border-color:  lighten(theme-color(secondary-nav), 12%);
+$list-group-active-bg:      lighten(theme-color(secondary-nav), 10%);
+$list-group-active-border-color:  lighten(theme-color(secondary-nav), 8%);
 
 // Must be placed afterward to allow overrides
 @import "~bootstrap/scss/variables";
