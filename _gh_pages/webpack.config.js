@@ -69,6 +69,10 @@ module.exports = {
       {
         from: 'images',
         to: 'images'
+      },
+      {
+        from: 'src/styles',
+        to: 'src/styles'
       }
     ]),
     new CleanWebpackPlugin(['dist'], {
