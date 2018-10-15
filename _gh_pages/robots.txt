@@ -1,1 +1,1 @@
-Sitemap: http://localhost:9001/bootstrap-theme/sitemap.xml
+Sitemap: http://0.0.0.0:9001/bootstrap-theme/sitemap.xml
