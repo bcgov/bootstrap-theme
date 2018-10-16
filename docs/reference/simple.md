@@ -236,7 +236,7 @@ toc: true
         </div>
 
         <div class="mb-3">
-          <div class="btn-group" data-toggle="buttons">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input type="radio" name="options" id="option1" checked> Radio 1
             </label>
