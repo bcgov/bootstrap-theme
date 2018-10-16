@@ -12,18 +12,20 @@
   },
   "author": "",
   "license": "Apache-2.0",
+  "dependencies": {
+    "bootstrap": "~4.1.0",
+    "jquery": "~3.3.0",
+    "popper.js": "~1.14.0"
+  },
   "devDependencies": {
     "autoprefixer": "~7.2.0",
-    "bootstrap": "~4.1.0",
     "clean-webpack-plugin": "~0.1.19",
     "copy-webpack-plugin": "~4.5.0",
     "cross-env": "~5.2.0",
     "css-loader": "~0.28.11",
     "extract-text-webpack-plugin": "~3.0.0",
     "file-loader": "~1.1.11",
-    "jquery": "~3.3.0",
     "node-sass": "~4.5.3",
-    "popper.js": "~1.14.0",
     "postcss-loader": "~2.1.0",
     "precss": "~3.1.0",
     "sass-loader": "~7.1.0",
