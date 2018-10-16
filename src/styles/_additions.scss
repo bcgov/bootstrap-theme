@@ -4,20 +4,6 @@
 // or override bootstrap css before trying to create something new.
 //---------------------------------------------------------------------------------------
 
-$bcgov-font-path: '../fonts/' !default;
-
-// Declare primary font, we provide all types for various browsers/devices
-// the web browser will choose which one it wants ondemand instead of CSS onload
-@font-face {
-  font-family: 'Myriad-Pro';
-  src: url('#{$bcgov-font-path}MyriadWebPro.eot'); /* IE9 Compat Modes */
-  src: url('#{$bcgov-font-path}MyriadWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('#{$bcgov-font-path}MyriadWebPro.woff2') format('woff2'), /* Super Modern Browsers */
-  url('#{$bcgov-font-path}MyriadWebPro.woff') format('woff'), /* Pretty Modern Browsers */
-  url('#{$bcgov-font-path}MyriadWebPro.ttf')  format('truetype'), /* Safari, Android, iOS */
-  url('#{$bcgov-font-path}MyriadWebPro.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
 // The label element is no longer bolded by default, neither is this class defined
 .control-label {
   font-weight: 700;
