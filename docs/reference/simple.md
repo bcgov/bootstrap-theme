@@ -10,12 +10,10 @@ toc: true
 
 <div class="container">
 
-  <div>
-    <ol class="breadcrumb page-breadcrumb">
-      <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">Home</a></li>
-      <li class="breadcrumb-item active">Theme Demo</li>
-    </ol>
-  </div>
+  <nav class="breadcrumb page-breadcrumb">
+    <div class="breadcrumb-item"><a href="{{ site.baseurl }}/">Home</a></div>
+    <div class="breadcrumb-item active">Theme Demo</div>
+  </nav>
 
   <div id="banner">
     <div class="row">
