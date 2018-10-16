@@ -10,6 +10,13 @@ toc: true
 
 <div class="container">
 
+  <div>
+    <ol class="breadcrumb page-breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item active">Theme Demo</li>
+    </ol>
+  </div>
+
   <div id="banner">
     <div class="row">
       <div class="col-lg-8 col-md-7 col-sm-6">
