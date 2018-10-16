@@ -15,10 +15,15 @@
 header nav {
   background-color: theme-color(primary-nav);
   border-bottom: 2px solid theme-color(bcgold);
-  margin-bottom: 20px;
   &.shadow {
     box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5);
   }
+}
+
+// Add spacing around content (use p-* to override)
+main {
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 // Set footer background, add gold border above
@@ -34,25 +39,7 @@ footer .nav-item+.nav-item  {
   }
 }
 
-// Sticky footer
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  // Margin bottom by footer height
-  margin-bottom: 65px !important;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  //height: 60px;
-  //line-height: 40px; /* Vertically center the text there */
-}
-
+// Stronger border colour
 .alert.alert-warning {
   border-color: theme-color-level(warning, -4);
 }
