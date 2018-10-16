@@ -60,7 +60,7 @@ module.exports = {
       },
       {
         from: 'styles',
-        to: 'src'
+        to: 'scss'
       }
     ]),
     new CleanWebpackPlugin(['dist'], {

@@ -4,8 +4,6 @@
 //---------------------------------------------------------------------------------------
 // Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
 
-@import "~bootstrap/scss/functions";
-
 // Change theme-colors
 $theme-colors: (
   primary: #38598a,
@@ -49,6 +47,3 @@ $alert-border-level:        -7;
 // List groups
 $list-group-active-bg:      lighten(theme-color(secondary-nav), 10%);
 $list-group-active-border-color:  lighten(theme-color(secondary-nav), 8%);
-
-// Must be placed afterward to allow overrides
-@import "~bootstrap/scss/variables";
