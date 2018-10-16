@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
-CMD=${@-serve}
-docker run --rm -it --label=bootstrap-theme-jekyll --volume=$(pwd):/srv/jekyll \
+CMD=${@-serve --incremental}
+docker run --rm -it --name=bootstrap-theme-jekyll \
+  -v $(pwd):/srv/jekyll -v bst-jekyll-bundle:/usr/local/bundle \
   -p 4000:4000 -p 9001:9001 jekyll/jekyll jekyll $CMD
