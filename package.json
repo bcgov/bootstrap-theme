@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-theme",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "description": "",
   "style": "dist/css/bootstrap.css",
   "main": "dist/js/bootstrap",
@@ -13,9 +13,7 @@
   "author": "",
   "license": "Apache-2.0",
   "dependencies": {
-    "bootstrap": "~4.1.0",
-    "jquery": "~3.3.0",
-    "popper.js": "~1.14.0"
+    "bootstrap": "~4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "~7.2.0",
