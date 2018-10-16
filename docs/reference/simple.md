@@ -12,23 +12,21 @@ toc: true
 
   <div>
     <ol class="breadcrumb page-breadcrumb">
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="{{ site.baseurl }}/">Home</a></li>
       <li class="breadcrumb-item active">Theme Demo</li>
     </ol>
   </div>
 
   <div id="banner">
     <div class="row">
-      <div class="col-lg-8 col-md-7 col-sm-6">
+      <div class="col-md-9 col-sm-8">
         <h1>Simple Theme Reference</h1>
         <p class="lead">
           For complete Bootstrap documentation, see <a href="https://getbootstrap.com/docs/4.1/">The Official Site</a>.
         </p>
       </div>
       
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-4">
+      <div class="col-md-3 col-sm-4">
         <div class="list-group">
           <a class="list-group-item list-group-item-action" href="#navbars">Navbars</a>
           <a class="list-group-item list-group-item-action" href="#buttons">Buttons</a>
@@ -1112,7 +1110,7 @@ toc: true
       </div>
       <div class="col-lg-4">
         <h2>Popovers</h2>
-        <div style="margin-bottom: 3em;">
+        <div>
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
 
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Top</button>
