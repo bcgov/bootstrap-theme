@@ -52,3 +52,7 @@ body {
   //height: 60px;
   //line-height: 40px; /* Vertically center the text there */
 }
+
+.alert.alert-warning {
+  border-color: theme-color-level(warning, -4);
+}

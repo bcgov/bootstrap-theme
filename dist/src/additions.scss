@@ -23,3 +23,9 @@ $bcgov-font-path: '../fonts/' !default;
   font-weight: 700;
 }
 
+.breadcrumb.page-breadcrumb {
+  background: transparent;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  padding-left: 0;
+}
