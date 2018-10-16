@@ -4,7 +4,7 @@
 // or override bootstrap css before trying to create something new.
 //---------------------------------------------------------------------------------------
 
-$bcgov-font-path: '../fonts/';
+$bcgov-font-path: '../fonts/' !default;
 
 // Declare primary font, we provide all types for various browsers/devices
 // the web browser will choose which one it wants ondemand instead of CSS onload
