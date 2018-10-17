@@ -8,6 +8,26 @@
   text-decoration: none;
 }
 
+// Highlight focused links
+a:focus {
+  color: $link-hover-color;
+}
+
+// Add focus ring to btn-link, highlight as regular link
+.btn.btn-link {
+  text-decoration: underline;
+  &:focus, &.focus {
+    box-shadow: 0 0 0 $btn-focus-width rgba(theme-color(primary), .5);
+    color: $link-hover-color;
+  }
+}
+
+.list-group .list-group-item-action {
+  @include hover-focus {
+    text-decoration: underline;
+  }
+}
+
 // Header, adds the gold bottom border and shadow
 header nav {
   background-color: theme-color(primary-nav);
