@@ -21,10 +21,14 @@
     // Set on html element to keep footer at bottom of window short pages
     .fill-height-#{$breakpoint} {
       height: 100%;
-      body {
+      body, .fill-body {
         display: flex;
         flex-flow: column nowrap;
         min-height: 100%;
+      }
+      // Apply to extra container element(s) around the main
+      .fill-body {
+        flex: auto;
       }
       header, .header, footer, .footer {
         flex: none;
