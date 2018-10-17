@@ -9,6 +9,7 @@
   font-weight: 700;
 }
 
+// Remove background and left padding on page breadcrumbs
 .breadcrumb.page-breadcrumb {
   background: transparent;
   margin-bottom: 10px;
@@ -16,10 +17,12 @@
   padding-left: 0;
 }
 
-@each $breakpoint in (sm, md, lg) {
+// Option to keep footer at the bottom of the page
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
   @include media-breakpoint-up($breakpoint) {
     // Set on html element to keep footer at bottom of window short pages
-    .fill-height-#{$breakpoint} {
+    .fill-height#{$infix} {
       height: 100%;
       body, .fill-body {
         display: flex;
