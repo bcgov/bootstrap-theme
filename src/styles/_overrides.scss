@@ -23,6 +23,13 @@ main {
   padding-top: 20px;
 }
 
+// Underline navbar links when active
+.navbar-nav .nav-link {
+  @include hover-focus {
+    text-decoration: underline;
+  }
+}
+
 // Set footer background, add gold border above
 footer nav {
   background-color: theme-color(primary-nav);
@@ -30,9 +37,12 @@ footer nav {
 }
 
 // Only sibling list items in footer get left border
-footer .nav-item+.nav-item  {
-  @include media-breakpoint-up(lg) {
-    border-left: 1px solid #4b5e73;
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  footer .navbar-expand#{$infix} .nav-item+.nav-item {
+    @include media-breakpoint-up($breakpoint) {
+      border-left: 1px solid #4b5e73;
+    }
   }
 }
 
