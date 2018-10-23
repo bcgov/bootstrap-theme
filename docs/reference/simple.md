@@ -1065,7 +1065,7 @@ toc: true
     <div class="row">
       <div class="col-lg-12 mt-3">
         <h2>Compatibility card classes</h2>
-        <p>Card classes suitable converting older layouts previously using panel-* classes.</p>
+        <p>Card classes suitable for use in older layouts previously using panel-* classes.</p>
       </div>
     </div>
 
