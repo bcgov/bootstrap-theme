@@ -5,10 +5,10 @@
 Simply put, a Bootstrap v4 BC Government Look-and-Feel featuring:
 - Compatibility with pure Bootstrap markup
 - A few class extensions (`bcgold` colour classes, card classes supporting standard alert states)
-- No Javascript extensions, jQuery and popper.js are optional dependencies
+- No Javascript extensions. Bootstrap itself, jQuery and popper.js are optional dependencies
 - Source SCSS files are included in the distribution, allowing local customizations
-- NPM, Yarn and Bower package manager integration
-- Sample HTML pages and common components like headers and footers for quick setup.
+- Supports NPM, Yarn and Bower package manager integration
+- Includes sample HTML pages and common components like headers and footers for quick setup
 
 The project is a successor to the previous
 [Gov-2.0-Bootstrap-Skeleton](https://github.com/bcgov/Gov-2.0-Bootstrap-Skeleton)
