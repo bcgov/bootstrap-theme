@@ -8,6 +8,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com:bcgov/bootstrap-theme.git"
   },
+  "bugs": {
+    "url": "https://github.com/bcgov/bootstrap-theme/issues"
+  },
   "files": [
     "dist"
   ],
@@ -28,6 +31,9 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
+  },
+  "peerDependencies": {
+    "bootstrap": "~4.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.0",
