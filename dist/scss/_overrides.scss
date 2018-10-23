@@ -67,6 +67,9 @@ footer nav {
 }
 
 // Stronger border colour
+.alert.alert-info {
+  border-color: theme-color-level(info, -4);
+}
 .alert.alert-warning {
   border-color: theme-color-level(warning, -4);
 }
