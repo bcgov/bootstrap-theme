@@ -38,8 +38,9 @@ $navbar-nav-link-padding-y: .4rem;
 $navbar-dark-color:         #fff;
 $navbar-dark-toggler-border-color: rgba(#fff, 0.6);
 
-// Breadcrumbs
-//$breadcrumb-bg: transparent;
+// Table header
+$table-dark-bg: theme-color(primary);
+$table-dark-border-color: theme-color(primary);
 
 // Slightly darker borders
 $alert-border-level:        -7;
