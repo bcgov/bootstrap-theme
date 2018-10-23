@@ -416,11 +416,11 @@ toc: true
     </div>
     <div class="row mt-3">
       <div class="col-lg-12">
-        <table class="table table-striped table-hover table-bordered table-small">
+        <table class="table table-striped table-hover table-bordered table-sm">
           <thead>
             <tr>
               <th>#</th>
-              <th>Bordered table</th>
+              <th>Bordered table w/ reduced padding</th>
               <th>Column heading</th>
               <th>Column heading</th>
             </tr>
