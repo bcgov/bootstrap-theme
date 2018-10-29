@@ -10,18 +10,21 @@ toc: true
 
 <div class="container">
 
+  <nav class="breadcrumb page-breadcrumb">
+    <div class="breadcrumb-item"><a href="{{ site.baseurl }}/">Home</a></div>
+    <div class="breadcrumb-item active">Theme Demo</div>
+  </nav>
+
   <div id="banner">
     <div class="row">
-      <div class="col-lg-8 col-md-7 col-sm-6">
+      <div class="col-md-9 col-sm-8">
         <h1>Simple Theme Reference</h1>
         <p class="lead">
-          For a complete Bootstrap docs, see <a href="https://getbootstrap.com/docs/4.0/">bootstrap docs</a>
+          For complete Bootstrap documentation, see <a href="https://getbootstrap.com/docs/4.1/">The Official Site</a>.
         </p>
       </div>
       
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-4">
+      <div class="col-md-3 col-sm-4">
         <div class="list-group">
           <a class="list-group-item list-group-item-action" href="#navbars">Navbars</a>
           <a class="list-group-item list-group-item-action" href="#buttons">Buttons</a>
@@ -40,88 +43,86 @@ toc: true
 
   <!-- Navbar
   ================================================== -->
-  <div class="clearfix">
-    <div class="row">
-      <div class="col-lg-12">
-        <div>
-          <h1 id="navbars">Navbars</h1>
-        </div>
-          
-        <div>
-          <h2>Expanded</h2>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary-nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <a class="navbar-brand" href="#">Navbar</a>
-
-            <div class="collapse navbar-collapse" id="navbarColor01">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-        </div>
-
-        <div>
-          <h2>Collapsed</h2>
-          <nav class="navbar navbar-dark bg-secondary-nav">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <a class="navbar-brand" href="#">Navbar</a>
-
-            <div class="collapse navbar-collapse" id="navbarColor02">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-              <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-        </div>
-
+  <hr>
+  <div class="row mt-3">
+    <div class="col-lg-12">
+      <div>
+        <h1 id="navbars">Navbars</h1>
       </div>
+        
+      <div>
+        <h2>Expanded</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-bcgold my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mt-3">
+        <h2>Collapsed</h2>
+        <nav class="navbar navbar-dark bg-secondary-nav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-bcgold my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+
     </div>
   </div>
 
 
   <!-- Buttons
   ================================================== -->
-  <div>
-    <div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 id="buttons">Buttons</h1>
-        </div>
+  <hr>
+  <div class="mt-3">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 id="buttons">Buttons</h1>
       </div>
     </div>
 
@@ -203,7 +204,7 @@ toc: true
           </div>
         </div>
 
-        <div>
+        <div class="mt-3">
           <button type="button" class="btn btn-primary btn-lg">Large button</button>
           <button type="button" class="btn btn-primary">Default button</button>
           <button type="button" class="btn btn-primary btn-sm">Small button</button>
@@ -216,7 +217,7 @@ toc: true
           <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
         </p>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input type="checkbox" checked> Checkbox 1
@@ -230,8 +231,8 @@ toc: true
           </div>
         </div>
 
-        <div style="margin-bottom: 15px;">
-          <div class="btn-group" data-toggle="buttons">
+        <div class="mb-3">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
             <label class="btn btn-primary active">
               <input type="radio" name="options" id="option1" checked> Radio 1
             </label>
@@ -244,7 +245,7 @@ toc: true
           </div>
         </div>
 
-        <div>
+        <div class="mb-3">
           <div class="btn-group-vertical" data-toggle="buttons">
             <button type="button" class="btn btn-primary">Button</button>
             <button type="button" class="btn btn-primary">Button</button>
@@ -255,15 +256,15 @@ toc: true
           </div>
         </div>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-secondary">Left</button>
-            <button type="button" class="btn btn-secondary">Middle</button>
-            <button type="button" class="btn btn-secondary">Right</button>
+            <button type="button" class="btn btn-bcgold">Left</button>
+            <button type="button" class="btn btn-bcgold">Middle</button>
+            <button type="button" class="btn btn-bcgold">Right</button>
           </div>
         </div>
 
-        <div style="margin-bottom: 15px;">
+        <div class="mb-3">
           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group" role="group" aria-label="First group">
               <button type="button" class="btn btn-secondary">1</button>
@@ -288,7 +289,8 @@ toc: true
 
   <!-- Typography
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
     <div class="row">
       <div class="col-lg-12">
         <div>
@@ -342,7 +344,7 @@ toc: true
 
     <!-- Blockquotes -->
 
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-lg-12">
         <h2 id="type-blockquotes">Blockquotes</h2>
       </div>
@@ -361,77 +363,121 @@ toc: true
 
   <!-- Tables
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
 
     <div class="row">
       <div class="col-lg-12">
         <div>
           <h1 id="tables">Tables</h1>
         </div>
-
-        <div>
-          <table class="table table-striped table-hover table-bordered">
-            <thead class="thead-dark">
-              <tr>
-                <th>#</th>
-                <th>Column heading</th>
-                <th>Column heading</th>
-                <th>Column heading</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-              <tr class="table-info">
-                <td>3</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-              <tr class="table-success">
-                <td>4</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-              <tr class="table-danger">
-                <td>5</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-              <tr class="table-warning">
-                <td>6</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-              <tr class="table-active">
-                <td>7</td>
-                <td>Column content</td>
-                <td>Column content</td>
-                <td>Column content</td>
-              </tr>
-            </tbody>
-          </table> 
-        </div><!-- /example -->
       </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Plain table</th>
+              <th>Second column</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-6">
+        <table class="table table-striped table-hover ">
+          <thead class="thead-dark">
+            <tr>
+              <th>Dark header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-lg-12">
+        <table class="table table-striped table-hover table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Bordered table w/ reduced padding</th>
+              <th>Column heading</th>
+              <th>Column heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="table-info">
+              <td>3</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="table-success">
+              <td>4</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="table-danger">
+              <td>5</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="table-warning">
+              <td>6</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="table-active">
+              <td>7</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>
+        </table> 
+      </div><!-- /example -->
     </div>
   </div>
 
   <!-- Forms
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
     <div class="row">
       <div class="col-lg-12">
         <div>
@@ -447,16 +493,16 @@ toc: true
             <fieldset>
               <legend>Legend</legend>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label class="control-label" for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label class="control-label" for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
               </div>
               <div class="form-group">
-                <label for="exampleSelect1">Example select</label>
+                <label class="control-label" for="exampleSelect1">Example select</label>
                 <select class="form-control" id="exampleSelect1">
                   <option>1</option>
                   <option>2</option>
@@ -466,7 +512,7 @@ toc: true
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleSelect2">Example multiple select</label>
+                <label class="control-label" for="exampleSelect2">Example multiple select</label>
                 <select multiple class="form-control" id="exampleSelect2">
                   <option>1</option>
                   <option>2</option>
@@ -476,40 +522,42 @@ toc: true
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleTextarea">Example textarea</label>
+                <label class="control-label" for="exampleTextarea">Example textarea</label>
                 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
               </div>
               <div class="form-group">
-                <label for="exampleInputFile">File input</label>
+                <label class="control-label" for="exampleInputFile">File input</label>
                 <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
                 <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
               </div>
               <fieldset class="form-group">
                 <legend>Radio buttons</legend>
                 <div class="form-check">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                  <label class="form-check-label" for="optionsRadios1">
                     Option one is this and that&mdash;be sure to include why it's great
                   </label>
                 </div>
                 <div class="form-check">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                  <label class="form-check-label" for="optionsRadios2">
                     Option two can be something else and selecting it will deselect option one
                   </label>
                 </div>
                 <div class="form-check disabled">
-                <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                  <label class="form-check-label" for="optionsRadios3">
                     Option three is disabled
                   </label>
                 </div>
               </fieldset>
-              <div class="form-check">
-                <label class="form-check-label">
-                  <input type="checkbox" class="form-check-input">
-                  Check me out
-                </label>
+              <div class="form-group">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="optionsCheck1">
+                  <label class="form-check-label" for="optionsCheck1">
+                    Check me out
+                  </label>
+                </div>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </fieldset>
@@ -522,59 +570,57 @@ toc: true
 
             <div class="form-group">
               <fieldset disabled>
-                <label for="disabledInput">Disabled input</label>
+                <label class="control-label" for="disabledInput">Disabled input</label>
                 <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled="">
               </fieldset>
             </div>
 
             <div class="form-group">
               <fieldset>
-                <label for="readOnlyInput">Readonly input</label>
+                <label class="control-label" for="readOnlyInput">Readonly input</label>
                 <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here…" readonly>
               </fieldset>
             </div>
 
             <div class="form-group is-valid">
-              <label for="inputSuccess1">Input with success</label>
+              <label class="control-label" for="inputSuccess1">Input with success</label>
               <input type="text" class="form-control is-valid" id="inputSuccess1">
-              <div>Success! You've done it.</div>
-            </div>
-
-            <div class="form-group is-invalid">
-              <label for="inputWarning1">Input with warning</label>
-              <input type="text" class="form-control" id="inputWarning1">
-              <div class="form-control-feedback">Shucks, try again.</div>
+              <div class="valid-feedback">Success! You've done it.</div>
             </div>
 
             <div class="form-group">
-              <label for="inputDanger1">Input with danger</label>
+              <label class="control-label" for="inputDanger1">Input with danger</label>
               <input type="text" class="form-control  is-invalid" id="inputDanger1">
               <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
             </div>
 
             <div class="form-group">
-              <label class="col-form-label col-form-label-lg" for="inputLarge">Large input</label>
+              <label class="col-form-label col-form-label-lg control-label" for="inputLarge">Large input</label>
               <input class="form-control form-control-lg" type="text" id="inputLarge">
             </div>
 
             <div class="form-group">
-              <label class="col-form-label" for="inputDefault">Default input</label>
+              <label class="col-form-label control-label" for="inputDefault">Default input</label>
               <input type="text" class="form-control" id="inputDefault">
             </div>
 
             <div class="form-group">
-              <label class="col-form-label col-form-label-sm" for="inputSmall">Small input</label>
+              <label class="col-form-label col-form-label-sm control-label" for="inputSmall">Small input</label>
               <input class="form-control form-control-sm" type="text" id="inputSmall">
             </div>
 
             <div class="form-group">
-              <label>Input addons</label>
+              <label class="control-label">Input addons</label>
               <div class="form-group">
                 <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
                 <div class="input-group">
-                  <div class="input-group-addon">$</div>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
                   <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-                  <div class="input-group-addon">.00</div>
+                  <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -586,7 +632,8 @@ toc: true
 
   <!-- Navs
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
 
     <div class="row">
       <div class="col-lg-12">
@@ -600,15 +647,15 @@ toc: true
       <div class="col-lg-6">
         <h2 id="nav-tabs">Tabs</h2>
         <div>
-          <ul class="nav nav-tabs">
+          <ul class="nav nav-tabs mb-2" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile">Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link disabled" id="disabled-tab" href="#">Disabled</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -622,7 +669,7 @@ toc: true
             </li>
           </ul>
           <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active" id="home">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
             </div>
             <div class="tab-pane fade" id="profile">
@@ -640,30 +687,6 @@ toc: true
 
       <div class="col-lg-6">
         <h2 id="nav-pills">Pills</h2>
-        <div>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-        </div>
-        <br>
         <div>
           <ul class="nav nav-pills">
             <li class="nav-item">
@@ -797,7 +820,8 @@ toc: true
 
   <!-- Indicators
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
 
     <div class="row">
       <div class="col-lg-12">
@@ -845,10 +869,10 @@ toc: true
         </div>
       </div>
     </div>
-    <div>
+    <div class="mt-3">
       <h2>Badges</h2>
       <h3>Regular</h3>
-      <div>
+      <div class="mb-3">
         <span class="badge badge-primary">Primary</span>
         <span class="badge badge-secondary">Secondary</span>
         <span class="badge badge-success">Success</span>
@@ -859,7 +883,7 @@ toc: true
         <span class="badge badge-dark">Dark</span>
       </div>
       <h3>Pills</h3>
-      <div>
+      <div class="mb-3">
         <span class="badge badge-pill badge-primary">Primary</span>
         <span class="badge badge-pill badge-secondary">Secondary</span>
         <span class="badge badge-pill badge-success">Success</span>
@@ -870,7 +894,7 @@ toc: true
         <span class="badge badge-pill badge-dark">Dark</span>
       </div>
       <h3>As Links</h3>
-      <div>
+      <div class="mb-3">
         <a href="#" class="badge badge-primary">Primary</a>
         <a href="#" class="badge badge-secondary">Secondary</a>
         <a href="#" class="badge badge-success">Success</a>
@@ -885,7 +909,8 @@ toc: true
 
   <!-- Progress
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
 
     <div class="row">
       <div class="col-lg-12">
@@ -895,30 +920,30 @@ toc: true
 
         <h3 id="progress-basic">Basic</h3>
         <div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar" role="progressbar" style="width: 25%; height: 20px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <h3 id="progress-alternatives">Contextual alternatives</h3>
         <div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <h3 id="progress-multiple">Multiple bars</h3>
         <div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
             <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
             <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -927,26 +952,26 @@ toc: true
 
         <h3 id="progress-striped">Striped</h3>
         <div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
 
         <h3 id="progress-animated">Animated</h3>
         <div>
-          <div class="progress">
+          <div class="progress mb-2">
             <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
           </div>
         </div>
@@ -956,7 +981,8 @@ toc: true
 
   <!-- Containers
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
 
     <div class="row">
       <div class="col-lg-12">
@@ -1036,7 +1062,7 @@ toc: true
 
     <div class="row">
       <div class="col-lg-4">
-        <div class="card" style="width: 20rem;">
+        <div class="card">
           <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 180px; width: 100%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15f16c1abc4%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15f16c1abc4%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22118.0859375%22%20y%3D%2297.2%22%3E318x180%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
           <div class="card-body">
             <h4 class="card-title">Card title</h4>
@@ -1046,21 +1072,130 @@ toc: true
         </div>
       </div>
       <div class="col-lg-4">
-              <div class="card" style="width: 20rem;">
-                <div class="card-body">
-                  <h4 class="card-title">Card title</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+        <div class="card">
+          <h4 class="card-header">Card title</h4>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#profile">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 mt-3">
+        <h2>Compatibility card classes</h2>
+        <p>Card classes suitable for use in older layouts previously using panel-* classes.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card card-default">
+          <div class="card-header">
+            <h5 class="my-0">Default</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This panel corresponds to the old panel-default.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-lg-4">
+        <div class="card card-primary">
+          <div class="card-header">
+            <h5 class="my-0">Primary</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is a primary color panel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-secondary">
+          <div class="card-header">
+            <h5 class="my-0">Secondary</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is a secondary color panel.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-info">
+          <div class="card-header">
+            <h5 class="my-0">Info</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is an info color panel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-lg-4">
+        <div class="card card-success">
+          <div class="card-header">
+            <h5 class="my-0">Success</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is a classic success message.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-warning">
+          <div class="card-header">
+            <h5 class="my-0">Warning</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is a classic warning message.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card card-danger">
+          <div class="card-header">
+            <h5 class="my-0">Danger</h5>
+          </div>
+          <div class="card-body">
+            <p class="card-text">This is a classic danger message.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 
   <!-- Dialogs
   ================================================== -->
-  <div>
+  <hr>
+  <div class="mt-3">
 
     <div class="row">
       <div class="col-lg-12">
@@ -1071,7 +1206,7 @@ toc: true
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h2>Modals</h2>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -1099,9 +1234,9 @@ toc: true
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-4">
         <h2>Popovers</h2>
-        <div style="margin-bottom: 3em;">
+        <div>
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Left</button>
 
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Top</button>
@@ -1111,6 +1246,8 @@ toc: true
 
           <button type="button" class="btn btn-secondary" title="Popover Title" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Right</button>
         </div>
+      </div>
+      <div class="col-lg-4">
         <h2>Tooltips</h2>
         <div>
           <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Left</button>

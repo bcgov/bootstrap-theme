@@ -20,6 +20,7 @@ exclude:
   - .github
   - assets/scss/
   - build
+  - jekyll-docker.sh
   - js
   - node_modules
   - nuget
@@ -34,6 +35,8 @@ exclude:
   - package.json
   - package-lock.json
   - sache.json
+  - src
+  - webpack.config.json
 
 plugins:
   - jekyll-redirect-from
@@ -41,8 +44,8 @@ plugins:
   - jekyll-toc
 
 # Social
-title:              B.C. Government Bootstrap Theme
-description:        "The most popular HTML, CSS, and JS library in the world themed with B.C. Government look-and-feel"
+title:              Government of British Columbia Bootstrap Theme
+description:        "The most popular HTML, CSS, and JS library in the world themed with BC Government look-and-feel"
 authors:            "Greg Turner"
 
 # Custom variables
