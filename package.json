@@ -18,6 +18,7 @@
     "build": "cross-env NODE_ENV=production webpack -p --display-error-details",
     "docs-compile": "bundle exec jekyll build",
     "docs-serve": "bundle exec jekyll serve",
+    "lint": "sass-lint -v",
     "watch": "cross-env NODE_ENV=development webpack --progress --colors --watch"
   },
   "contributors": [
@@ -30,8 +31,7 @@
     }
   ],
   "license": "Apache-2.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "bootstrap": "~4.1.0"
   },
@@ -48,6 +48,7 @@
     "postcss-loader": "^2.1.0",
     "precss": "^3.1.0",
     "sass-loader": "^7.1.0",
+    "sass-lint": "^1.12.1",
     "style-loader": "^0.23.0",
     "webpack": "^3.10.0"
   }

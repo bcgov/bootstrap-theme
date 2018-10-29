@@ -779,9 +779,6 @@ toc: true
                 <a class="page-link" href="#">4</a>
               </li>
               <li class="page-item">
-                <a class="page-link" href="#">5</a>
-              </li>
-              <li class="page-item">
                 <a class="page-link" href="#">&raquo;</a>
               </li>
             </ul>

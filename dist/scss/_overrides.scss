@@ -3,6 +3,7 @@
 // overriding classes.
 //---------------------------------------------------------------------------------------
 // Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
+// sass-lint:disable force-element-nesting, force-pseudo-nesting
 
 .nav-link, .navbar-brand, .page-link, a.btn {
   text-decoration: none;
@@ -17,7 +18,7 @@ a:focus {
 .btn.btn-link {
   text-decoration: underline;
   &:focus, &.focus {
-    box-shadow: 0 0 0 $btn-focus-width rgba(theme-color(primary), .5);
+    box-shadow: 0 0 0 $btn-focus-width $btn-link-outline-color;
     color: $link-hover-color;
   }
 }
@@ -33,7 +34,7 @@ header nav {
   background-color: theme-color(primary-nav);
   border-bottom: 2px solid theme-color(bcgold);
   &.shadow {
-    box-shadow: 0 3px 3px 1px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 3px 3px 1px $header-box-shadow-color;
   }
 }
 
@@ -59,9 +60,9 @@ footer nav {
 // Only sibling list items in footer get left border
 @each $breakpoint in map-keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-  footer .navbar-expand#{$infix} .nav-item+.nav-item {
+  footer .navbar-expand#{$infix} .nav-item + .nav-item {
     @include media-breakpoint-up($breakpoint) {
-      border-left: 1px solid #4b5e73;
+      border-left: 1px solid $footer-separator-color;
     }
   }
 }
