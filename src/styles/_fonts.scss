@@ -3,6 +3,7 @@ $bcgov-font-path: '../fonts/' !default;
 // Declare primary font, we provide all types for various browsers/devices
 // the web browser will choose which one it wants ondemand instead of CSS onload
 @font-face {
+  // sass-lint:disable no-duplicate-properties
   font-family: 'Myriad-Pro';
   src: url('#{$bcgov-font-path}MyriadWebPro.eot'); /* IE9 Compat Modes */
   src: url('#{$bcgov-font-path}MyriadWebPro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
