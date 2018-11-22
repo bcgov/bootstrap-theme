@@ -4,6 +4,9 @@
 // Now bring in the rest of bootstrap!
 @import "~bootstrap/scss/bootstrap";
 
+// Overrides of bootstrap classes
+@import "overrides";
+
 // Import the additions to bootstrap base
 @import "additions";
 
