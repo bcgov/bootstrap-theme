@@ -2,7 +2,7 @@
 
 [Full documentation and demonstrations of the theme](https://bcgov.github.io/bootstrap-theme/) 
 
-A Bootstrap version 4.1 BC Government Look-and-Feel featuring:
+A Bootstrap version 4.3 BC Government look-and-feel featuring:
 - Compatibility with pure Bootstrap markup
 - A few additions:
   - `bcgold` colour classes for the old-style gold buttons (`btn-bcgold`, `bg-bcgold`, etc)
