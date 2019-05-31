@@ -45,7 +45,15 @@ $table-dark-bg: theme-color(primary);
 $table-dark-border-color: theme-color(primary);
 
 // Slightly darker borders
+$gray-400:                  #ced4da;
 $alert-border-level:        -7;
+$card-border-color:         rgba(0, 0, 0, .2);
+$hr-border-color:           rgba(0, 0, 0, .2);
+$border-color:              $gray-400;
+$nav-tabs-border-color:     $gray-400;
+$pagination-border-color:   $gray-400;
+$pagination-hover-border-color:  $gray-400;
+$table-border-color:        $gray-400;
 
 // List groups
 $list-group-active-bg:      lighten(theme-color(secondary-nav), 10%);

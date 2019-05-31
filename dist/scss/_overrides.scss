@@ -10,7 +10,7 @@
 }
 
 // Highlight focused links
-a:focus {
+a:not(.btn):focus {
   color: $link-hover-color;
 }
 
