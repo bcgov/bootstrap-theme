@@ -1112,7 +1112,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-default">
           <div class="card-header">
-            <h5 class="my-0">Default</h5>
+            <h4 class="my-0">Default</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This panel corresponds to the old panel-default.</p>
@@ -1125,7 +1125,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-primary">
           <div class="card-header">
-            <h5 class="my-0">Primary</h5>
+            <h4 class="my-0">Primary</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This is a primary color panel.</p>
@@ -1135,7 +1135,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-secondary">
           <div class="card-header">
-            <h5 class="my-0">Secondary</h5>
+            <h4 class="my-0">Secondary</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This is a secondary color panel.</p>
@@ -1145,7 +1145,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-info">
           <div class="card-header">
-            <h5 class="my-0">Info</h5>
+            <h4 class="my-0">Info</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This is an info color panel.</p>
@@ -1158,7 +1158,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-success">
           <div class="card-header">
-            <h5 class="my-0">Success</h5>
+            <h4 class="my-0">Success</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This is a classic success message.</p>
@@ -1168,7 +1168,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-warning">
           <div class="card-header">
-            <h5 class="my-0">Warning</h5>
+            <h4 class="my-0">Warning</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This is a classic warning message.</p>
@@ -1178,7 +1178,7 @@ toc: true
       <div class="col-lg-4">
         <div class="card card-danger">
           <div class="card-header">
-            <h5 class="my-0">Danger</h5>
+            <h4 class="my-0">Danger</h4>
           </div>
           <div class="card-body">
             <p class="card-text">This is a classic danger message.</p>

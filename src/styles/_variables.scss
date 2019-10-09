@@ -18,12 +18,21 @@ $theme-colors: (
 );
 
 // Add our font as default
-$font-family-sans-serif:    Myriad-Pro, Calibri, Arial, sans serif;
+$font-family-sans-serif:    BCSans, Verdana, Arial, sans serif;
 $font-family-base:          $font-family-sans-serif;
+$line-height-base:          1.6;
 $body-color:                #494949;
 
 // Headings
-$headings-font-weight:      600;
+$headings-font-weight:      700;
+$headings-line-height:      1.1;
+$headings-margin-bottom:    1.25rem;
+$h1-font-size:              2.074rem;
+$h2-font-size:              1.54912rem;
+$h3-font-size:              1.33882rem;
+$h4-font-size:              1rem;
+$h5-font-size:              0.86425rem;
+$h6-font-size:              0.80345rem;
 
 // Links
 $link-decoration:           underline;

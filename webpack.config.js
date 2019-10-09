@@ -1,7 +1,7 @@
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   context: __dirname + "/src",
@@ -10,37 +10,39 @@ module.exports = {
 
   output: {
     path: __dirname + "/dist",
+    publicPath: '../',
     filename: 'js/bootstrap-theme.min.js'
   },
   module: {
 
     rules: [
-      /*
-      your other rules for JavaScript transpiling go in here
-      */
-      { // regular css files
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: 'css-loader?importLoaders=1',
-        }),
-      },
-      { // sass / scss loader for webpack
-        test: /\.(sass|scss)$/,
-        use: ExtractTextPlugin.extract([{
-          loader: "css-loader",
-          options: {
-            minimize: true
-          }}, 'sass-loader'])
-      },
-      // Pull out all fonts because not all should be packaged because some browsers prefer different types
+      // loader for regular css files
       {
-        test: /\.(ttf|eot|woff|woff2|svg)$/,
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+          'postcss-loader',
+        ],
+      },
+      // scss loader for webpack
+      {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
+          { loader: 'sass-loader', options: { sourceMap: true } },
+        ],
+      },
+      // move fonts into local directory
+      {
+        test: /\.(otf|ttf|eot|woff|woff2|svg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
-              publicPath: '../'
+              debug: true
             }
           }
         ]
@@ -48,12 +50,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin({ // define where to save the file
+    new MiniCssExtractPlugin({
       filename: 'css/bootstrap-theme.min.css',
-      allChunks: true,
     }),
     // We just copy these because the client may have already a dependency or choose a different JS package
     new CopyWebpackPlugin([
+      {
+        from: 'fonts',
+        to: 'fonts'
+      },
       {
         from: 'images',
         to: 'images'
@@ -63,8 +68,7 @@ module.exports = {
         to: 'scss'
       }
     ]),
-    new CleanWebpackPlugin(['dist'], {
-      root: __dirname,
+    new CleanWebpackPlugin({
       verbose: true,
       dry: false
     }),
