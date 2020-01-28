@@ -1,6 +1,8 @@
 # 🚀 Government of British Columbia Bootstrap v4 Theme
 
-[Full documentation and demonstrations of the theme](https://bcgov.github.io/bootstrap-theme/) 
+[Getting Started instructions](https://bcgov.github.io/bootstrap-theme/docs/getting-started/introduction/)
+
+[Full documentation and demonstrations of the theme](https://bcgov.github.io/bootstrap-theme/)
 
 A Bootstrap version 4.3 BC Government look-and-feel featuring:
 - Compatibility with pure Bootstrap markup

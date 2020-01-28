@@ -31,6 +31,19 @@ $bcgov-font-path: "../node_modules/@bcgov/bootstrap-theme/dist/fonts/";
 @import "~@bcgov/bootstrap-theme/dist/scss/bootstrap-theme";
 ```
 
+SCSS variables and mixins defined by Bootstrap and the theme can be imported independent of
+any display rules for use in isolated components:
+
+```scss
+@import "~@bcgov/bootstrap-theme/dist/scss/common";
+```
+
+Generated CSS can be imported using the following (paths may vary):
+
+```css
+@import "~@bcgov/bootstrap-theme/dist/css/bootstrap-theme.min.css";
+```
+
 ## Javascript support
 
 To use the Bootstrap Javascript extensions (for popups, mobile navbar support, etc), you will
