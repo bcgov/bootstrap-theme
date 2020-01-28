@@ -73,8 +73,10 @@ in place of these requirements.
 
 ## Sample Template
 
-A simple page template follows. The `fill-height-*` classes can be used to keep the page
-footer at the bottom of the screen on larger screen sizes.
+A simple page template follows. The `fill-height-md` or `fill-height-lg` classes can be
+used to keep the page footer at the bottom of the screen on larger screen sizes. In this
+case the `fill-body` class should be applied to any intermediate elements between `<body>`
+and the page content.
 
 ```html
 <!DOCTYPE html>
@@ -88,42 +90,13 @@ footer at the bottom of the screen on larger screen sizes.
 
     <title>Hello World</title>
 
-    <link
-      href="/bootstrap-theme/dist/css/bootstrap-theme.min.css"
-      rel="stylesheet"
-    />
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="/bootstrap-theme/dist/images/bcid-apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="/bootstrap-theme/dist/images/bcid-favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="/bootstrap-theme/dist/images/bcid-favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="/bootstrap-theme/dist/images/manifest.json" />
-    <link
-      rel="mask-icon"
-      href="/bootstrap-theme/dist/images/bcid-apple-icon.svg"
-      color="#036"
-    />
-    <link
-      rel="icon"
-      href="/bootstrap-theme/dist/images/bcid-favicon-32x32.png"
-    />
-    <meta
-      name="msapplication-config"
-      content="/bootstrap-theme/dist/images/browserconfig.xml"
-    />
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" href="/images/bcid-apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" href="/images/bcid-favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/images/bcid-favicon-16x16.png" sizes="16x16" type="image/png" />    
+    <link rel="mask-icon" href="/images/bcid-apple-icon.svg" color="#036" />
+    <link rel="icon" href="/images/bcid-favicon-32x32.png" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#036" />
   </head>
   <body>
@@ -133,14 +106,14 @@ footer at the bottom of the screen on larger screen sizes.
           <a class="navbar-brand" href="https://www2.gov.bc.ca">
             <img
               class="img-fluid d-none d-md-block"
-              src="/bootstrap-theme/dist/images/bcid-logo-rev-en.svg"
+              src="/images/bcid-logo-rev-en.svg"
               width="181"
               height="44"
               alt="B.C. Government Logo"
             />
             <img
               class="img-fluid d-md-none"
-              src="/bootstrap-theme/dist/images/bcid-symbol-rev.svg"
+              src="/images/bcid-symbol-rev.svg"
               width="64"
               height="44"
               alt="B.C. Government Logo"
@@ -248,4 +221,29 @@ footer at the bottom of the screen on larger screen sizes.
     </script>
   </body>
 </html>
+```
+
+Sample `manifest.json` web app metadata file:
+
+```json
+{
+    "name": "B.C. Government",
+    "short_name": "BC Gov.",
+    "icons": [
+        {
+            "src": "/images/bcid-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/bcid-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "theme_color": "#036",
+    "background_color": "#fff",
+    "display": "standalone"
+}
 ```
