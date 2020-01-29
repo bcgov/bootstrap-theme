@@ -1,12 +1,17 @@
 # 🚀 Government of British Columbia Bootstrap v4 Theme
 
-[Full documentation and demonstrations of the theme](https://bcgov.github.io/bootstrap-theme/) 
+[Getting Started instructions](https://bcgov.github.io/bootstrap-theme/docs/getting-started/introduction/)
+
+[Full documentation and demonstrations of the theme](https://bcgov.github.io/bootstrap-theme/)
 
 A Bootstrap version 4.3 BC Government look-and-feel featuring:
+- The [BC Sans](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans)
+  typeface
 - Compatibility with pure Bootstrap markup
 - A few additions:
   - `bcgold` colour classes for the old-style gold buttons (`btn-bcgold`, `bg-bcgold`, etc)
   - card classes to replace the old panel styles (`card-primary`, `card-success`, etc)
+- Increased contrast for accessibility
 - No Javascript extensions. Bootstrap itself, jQuery and popper.js are optional dependencies
 - Source SCSS files are included in the distribution, allowing local customizations
 - Supports NPM, Yarn and Bower package manager integration
