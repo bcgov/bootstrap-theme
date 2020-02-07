@@ -2,6 +2,7 @@
 // New variables and overridden variables from Bootstrap.
 // check out the variables.scss file in bootstrap for additional ones that are available.
 //---------------------------------------------------------------------------------------
+// Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
 
 // Change theme-colors
 $theme-colors: (
@@ -18,54 +19,77 @@ $theme-colors: (
 
 // Add our font as default
 $bcgov-font-path: "../fonts" !default;
-$font-family-sans-serif: BCSans, 'Noto Sans', Verdana, Arial, sans serif;
-$font-family-base: $font-family-sans-serif;
-$line-height-base: 1.6;
-$body-color: #494949;
+$font-family-sans-serif: BCSans, "Noto Sans", Verdana, Arial, sans serif !default;
+$font-family-base: $font-family-sans-serif !default;
+$line-height-base: 1.6 !default;
+$body-color: #494949 !default;
 
 // Headings
-$headings-font-weight: 700;
-$headings-line-height: 1.1;
-$headings-margin-bottom: 1.25rem;
-$h1-font-size: 2.074rem;
-$h2-font-size: 1.54912rem;
-$h3-font-size: 1.33882rem;
-$h4-font-size: 1rem;
-$h5-font-size: 0.86425rem;
-$h6-font-size: 0.80345rem;
+$headings-font-weight: 700 !default;
+$headings-line-height: 1.1 !default;
+$headings-margin-bottom: 1.25rem !default;
+$h1-font-size: 2.074rem !default;
+$h2-font-size: 1.54912rem !default;
+$h3-font-size: 1.33882rem !default;
+$h4-font-size: 1rem !default;
+$h5-font-size: 0.86425rem !default;
+$h6-font-size: 0.80345rem !default;
 
 // Links
-$link-decoration: underline;
-$link-color: #1a5a96;
-$link-hover-color: #0000f3;
+$link-decoration: underline !default;
+$link-color: #1a5a96 !default;
+$link-hover-color: #0631f3 !default;
+$btn-link-outline-color: rgba(theme-color(primary), 0.5) !default;
 
 // Navbar - header and footer
-$header-box-shadow-color: rgba(51, 51, 51, 0.5);
-$nav-link-padding-x: 0.8rem;
-$nav-link-padding-y: 0.4rem;
-$navbar-nav-link-padding-x: 0.8rem;
-$navbar-nav-link-padding-y: 0.4rem;
-$navbar-dark-color: #fff;
-$navbar-dark-toggler-border-color: rgba(255, 255, 255, 0.6);
-$footer-separator-color: #4b5e73;
+$header-box-shadow-color: rgba(51, 51, 51, 0.5) !default;
+$nav-link-padding-x: 0.8rem !default;
+$nav-link-padding-y: 0.4rem !default;
+$navbar-nav-link-padding-x: 0.8rem !default;
+$navbar-nav-link-padding-y: 0.4rem !default;
+$navbar-dark-color: #fff !default;
+$navbar-dark-toggler-border-color: rgba(255, 255, 255, 0.6) !default;
+$footer-separator-color: #4b5e73 !default;
 
 // Table header
-$table-dark-bg: theme-color(primary);
-$table-dark-border-color: theme-color(primary);
+$table-dark-bg: theme-color(primary) !default;
+$table-dark-border-color: theme-color(primary) !default;
 
-// Slightly darker borders
-$gray-400: #ced4da;
-$alert-border-level: -7;
-$card-border-color: rgba(0, 0, 0, 0.2);
-$hr-border-color: rgba(0, 0, 0, 0.2);
-$border-color: $gray-400;
-$nav-tabs-border-color: $gray-400;
-$pagination-border-color: $gray-400;
-$pagination-hover-border-color: $gray-400;
-$table-border-color: $gray-400;
+// Darker borders
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-450: #bdc5cc !default;
+$gray-500: #adb5bd !default;
+$alpha-border-color: rgba(black, 0.3) !default;
+$alert-border-level: -7 !default;
+$card-border-color: $alpha-border-color !default;
+$hr-border-color: $alpha-border-color !default;
+$border-color: $gray-400 !default;
+$input-border-color: $gray-500 !default;
+$list-group-border-color: $alpha-border-color !default;
+$nav-tabs-border-color: $gray-500 !default;
+$nav-tabs-link-active-border-color: $gray-500 $gray-500 white !default;
+$pagination-border-color: $gray-500 !default;
+$pagination-disabled-border-color: $gray-400 !default;
+// $pagination-active-border-color: $pagination-active-bg !default;
+$table-border-color: $gray-450 !default;
+$table-border-level: -5 !default;
 
-// List groups
-$list-group-active-bg: lighten(theme-color(secondary-nav), 10%);
-$list-group-active-border-color: lighten(theme-color(secondary-nav), 8%);
-
-$btn-link-outline-color: rgba(theme-color(primary), 0.5);
+// Clearer hover states
+$control-link-color: white !default;
+$control-link-bg: lighten(
+  theme-color(secondary-nav),
+  10%
+) !default; // custom var
+$control-link-border-color: lighten(
+  theme-color(secondary-nav),
+  8%
+) !default; // custom var
+$pagination-hover-color: $control-link-color;
+$pagination-hover-bg: $control-link-bg !default;
+$pagination-hover-border-color: $control-link-border-color !default;
+$list-group-active-bg: $control-link-bg !default;
+$list-group-active-border-color: $control-link-border-color !default;
+$list-group-action-hover-color: $link-hover-color;
+$nav-tabs-link-hover-border-color: $control-link-color $control-link-color
+  $nav-tabs-border-color !default;

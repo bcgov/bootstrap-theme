@@ -5,7 +5,10 @@
 // Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
 // sass-lint:disable force-element-nesting, force-pseudo-nesting
 
-.nav-link, .navbar-brand, .page-link, a.btn {
+.nav-link,
+.navbar-brand,
+.page-link,
+a.btn {
   text-decoration: none;
 }
 
@@ -13,11 +16,19 @@
 a:not(.btn):focus {
   color: $link-hover-color;
 }
+.nav-tabs .nav-link:not(.active) {
+  @include hover-focus {
+    background-color: $control-link-bg;
+    border-color: $control-link-border-color;
+    color: $control-link-color;
+  }
+}
 
 // Add focus ring to btn-link, highlight as regular link
 .btn.btn-link {
   text-decoration: underline;
-  &:focus, &.focus {
+  &:focus,
+  &.focus {
     box-shadow: 0 0 0 $btn-focus-width $btn-link-outline-color;
     color: $link-hover-color;
   }
@@ -73,4 +84,13 @@ footer nav {
 }
 .alert.alert-warning {
   border-color: theme-color-level(warning, -4);
+}
+
+// Override table row border colours
+@each $color, $value in $theme-colors {
+  @include table-row-variant(
+    $color,
+    theme-color-level($color, $table-bg-level),
+    $table-border-color
+  );
 }
