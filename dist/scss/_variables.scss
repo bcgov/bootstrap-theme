@@ -19,7 +19,7 @@ $theme-colors: (
 
 // Add our font as default
 $bcgov-font-path: "../fonts" !default;
-$font-family-sans-serif: BCSans, Verdana, Arial, sans serif;
+$font-family-sans-serif: BCSans, 'Noto Sans', Verdana, Arial, sans serif;
 $font-family-base: $font-family-sans-serif;
 $line-height-base: 1.6;
 $body-color: #494949;
