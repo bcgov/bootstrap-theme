@@ -91,9 +91,23 @@ and the page content.
     <title>Hello World</title>
 
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" href="/images/bcid-apple-touch-icon.png" sizes="180x180" />
-    <link rel="icon" href="/images/bcid-favicon-32x32.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="/images/bcid-favicon-16x16.png" sizes="16x16" type="image/png" />    
+    <link
+      rel="apple-touch-icon"
+      href="/images/bcid-apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/images/bcid-favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/images/bcid-favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
     <link rel="mask-icon" href="/images/bcid-apple-icon.svg" color="#036" />
     <link rel="icon" href="/images/bcid-favicon-32x32.png" />
     <link rel="manifest" href="/manifest.json" />
@@ -156,7 +170,7 @@ and the page content.
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www2.gov.bc.ca/gov/content/home/disclaimer"
+                href="https://www2.gov.bc.ca/gov/content?id=79F93E018712422FBC8E674A67A70535"
                 target="_blank"
                 >Disclaimer</a
               >
@@ -164,7 +178,7 @@ and the page content.
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www2.gov.bc.ca/gov/content/home/privacy"
+                href="https://www2.gov.bc.ca/gov/content?id=9E890E16955E4FF4BF3B0E07B4722932"
                 target="_blank"
                 >Privacy</a
               >
@@ -172,7 +186,7 @@ and the page content.
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www2.gov.bc.ca/gov/content/home/accessibility"
+                href="https://www2.gov.bc.ca/gov/content?id=E08E79740F9C41B9B0C484685CC5E412"
                 target="_blank"
                 >Accessibility</a
               >
@@ -180,7 +194,7 @@ and the page content.
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www2.gov.bc.ca/gov/content/home/copyright"
+                href="https://www2.gov.bc.ca/gov/content?id=1AAACC9C65754E4D89A118B875E0FBDA"
                 target="_blank"
                 >Copyright</a
               >
@@ -188,7 +202,7 @@ and the page content.
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="https://www2.gov.bc.ca/gov/content/home/contact-us"
+                href="https://www2.gov.bc.ca/gov/content?id=6A77C17D0CCB48F897F8598CCC019111"
                 target="_blank"
                 >Contact Us</a
               >
@@ -227,23 +241,23 @@ Sample `manifest.json` web app metadata file:
 
 ```json
 {
-    "name": "B.C. Government",
-    "short_name": "BC Gov.",
-    "icons": [
-        {
-            "src": "/images/bcid-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/images/bcid-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "start_url": "/",
-    "theme_color": "#036",
-    "background_color": "#fff",
-    "display": "standalone"
+  "name": "B.C. Government",
+  "short_name": "BC Gov.",
+  "icons": [
+    {
+      "src": "/images/bcid-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/bcid-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#036",
+  "background_color": "#fff",
+  "display": "standalone"
 }
 ```
