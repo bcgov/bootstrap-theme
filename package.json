@@ -1,10 +1,10 @@
 {
-  "name": "webpack",
-  "description": "Include Bootstrap's source Sass and individual JavaScript plugins with Webpack.",
-  "version": "0.0.0",
+  "name": "bootstrap-theme",
+  "description": "Government of British Columbia Bootstrap v5 theme",
+  "version": "1.0.1",
   "private": true,
-  "repository": "twbs/examples",
-  "license": "MIT",
+  "repository": "",
+  "license": "Apache",
   "stackblitz": {
     "startCommand": "npm start"
   },
