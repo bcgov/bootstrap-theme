@@ -10,6 +10,7 @@
   font-weight: 700;
 }
 
+/* NOT REQUIRED, default behavior in version 5 denotes there's no background color with breadcrumbs
 // Remove background and left padding on page breadcrumbs
 .breadcrumb.page-breadcrumb {
   background: transparent;
@@ -17,32 +18,32 @@
   margin-top: -5px;
   padding-left: 0;
 }
+*/
 
 // Option to keep footer at the bottom of the page
 @each $breakpoint in map-keys($grid-breakpoints) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    @include media-breakpoint-up($breakpoint) {
-      // Set on html element to keep footer at bottom of window short pages
-      .fill-height#{$infix} {
-        height: 100%;
-        body, .fill-body {
-          display: flex;
-          flex-flow: column nowrap;
-          min-height: 100%;
-        }
-        // Apply to extra container element(s) around the main
-        .fill-body {
-          flex: auto;
-        }
-        header, .header, footer, .footer {
-          flex: none;
-        }
-        main, .main {
-          flex: auto;
-          overflow: auto;
-        }
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-up($breakpoint) {
+    // Set on html element to keep footer at bottom of window short pages
+    
+      body, .fill-body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
       }
-    }
+      // Apply to extra container element(s) around the main
+      .fill-body {
+        flex: 1;
+      }
+      header, .header, footer, .footer {
+        flex: none;
+      }
+      main, .main {
+        flex: 1;
+        overflow: auto;
+      }
+    
+  }
 }
 
 $info-alert-border-level: -4;

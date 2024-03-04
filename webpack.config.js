@@ -7,17 +7,12 @@ const miniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: ['./src/js/main.js', './src/scss/styles.scss'],
+  entry: ['./src/js/bootstrap-theme.js', './src/scss/bootstrap-theme.scss'],
   output: { 
-    filename: 'js/main.js',
+    filename: 'js/bootstrap-theme.min.js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: '../fonts/bc-sans/[hash][ext][query]' // move fonts into local directory, file loader deprecated
-    /*
-    path: __dirname + "/dist",
-    publicPath: '../',
-    filename: 'js/main.js',
-    assetModuleFilename: 'fonts/bc-sans/[hash][ext][query]' // move fonts into local directory, file loader deprecated
-    */
+    //assetModuleFilename: '../fonts/bc-sans/[hash][ext][query]' // move fonts into local directory, file loader deprecated
+
   },
   devServer:{
     static: path.resolve(__dirname, 'dist'),
@@ -25,13 +20,38 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/index.html'
+    }),
+  
+    new HtmlWebpackPlugin({
+      filename: 'demo.html',
+      template: './src/demo.html'
+    }),
+
+    new HtmlWebpackPlugin({
+      filename: 'introduction.html',
+      template: './src/introduction.html'
+    }),
+    
+    //new HtmlWebpackPlugin({ template: './src/index.html' }),
     new miniCssExtractPlugin({
-      filename: 'css/main.css',
+      filename: 'css/bootstrap-theme.min.css',
     })
+  
   ],
   module: {
     rules: [
+       // move fonts into local directory
+       {
+        test      : /\.(otf|ttf|eot|woff|woff2|svg)$/,
+        type      : 'asset/resource',
+        generator : {
+          filename : 'fonts/bc-sans/[name][ext][query]',
+        }
+      },
+
       {
         test: /\.(scss)$/,
         use: [
