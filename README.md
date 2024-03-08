@@ -23,7 +23,7 @@ If you find yourself wanting to use the theme in your project outright, you can 
 
 `dist/css/bootstrap-theme.min.css`
 
-To ensure certain functions such as dropdowns, tooltips as well as popovers  work you will also have to import the minified JS file onto your project. You can find the minified JS file to link to your own project via this [path](dist/css/bootstrap-theme.min.js):
+To ensure certain functions such as dropdowns, tooltips as well as popovers  work you will also have to import the minified JS file onto your project. You can find the minified JS file to link to your own project via this [path](dist/js/bootstrap-theme.min.js):
 
 `dist/js/bootstrap-theme.min.js`
 
