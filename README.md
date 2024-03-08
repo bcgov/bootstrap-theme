@@ -27,9 +27,9 @@ To ensure certain functions such as dropdowns, tooltips as well as popovers  wor
 
 `dist/js/bootstrap-theme.min.js`
 
-You can add the refernces to external style sheet as well as the JS file inside `<link>` and `<script>` tags within the head section.
+You can add the references to external style sheet as well as the JS file inside `<link>` and `<script>` tags within the head section.
 
-- It it worth noting that your path may be different depending on your project strcuture 
+- It it worth noting that your path may be different depending on your project structure 
 
 ```html
 <head>
@@ -60,7 +60,7 @@ npm install
 
 ### Building Dist
 
-To build the styles, Javascript and other assets, use:
+To build the styles, JavaScript and other assets, use:
 
 ```bash
 npm run build
@@ -78,6 +78,6 @@ To see a list of changes made during the migration refer to the [CHANGELOG](CHAN
 
 ## Exsisting Project Migration
 
-If you find your self needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful. This depicts almost all of the classes and changes required for the migration from version 4 to version 5. Which you can refer to and opt in for search and replace where necessary.
+If you find yourself needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful. This depicts almost all of the classes and changes required for the migration from version 4 to version 5. Which you can refer to and opt in for search and replace where necessary.
 
-If you need to add or change utilities you can refer to the official [bootstrap migration](https://getbootstrap.com/docs/5.3/migration/) guide for a complete list of changes as well as a complete list of class names that have been changed or depreated. 
+If you need to add or change utilities you can refer to the official [bootstrap migration](https://getbootstrap.com/docs/5.3/migration/) guide for a complete list of changes as well as a complete list of class names that have been changed or deprecated. 
