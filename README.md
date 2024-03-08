@@ -5,6 +5,17 @@
 
 [Demonstrations of the theme](https://anjanak13.github.io/bootstrap-theme/dist/index.html)
 
+A Bootstrap version 5.3 BC Government look-and-feel featuring:
+
+- The [BC Sans](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/bc-sans) typeface
+- Compatibility with pure Bootstrap markup
+
+The project is a successor to the previous
+[Gov-4.0-Bootstrap-theme](https://github.com/bcgov/bootstrap-theme)
+[Gov-2.0-Bootstrap-Skeleton](https://github.com/bcgov/Gov-2.0-Bootstrap-Skeleton)
+and [mygovbc-bootstrap-theme](https://github.com/bcgov/mygovbc-bootstrap-theme).
+We combined the best of all projects and leverage the latest
+[Bootstrap](http://getbootstrap.com/) version.
 
 ## For New Developers
 
