@@ -19,13 +19,25 @@ We combined the best of all projects and leverage the latest
 
 ## For New Developers
 
-If you find yourself wanting to use the theme in your project outright, you can use the minified CSS file as you would like. You can find the minified CSS file to link to your own project via this path:
+If you find yourself wanting to use the theme in your project outright, you can use the minified CSS file as you would like. You can find the minified CSS file to link to your own project via this [path](dist/css/bootstrap-theme.min.css):
 
 `dist/css/bootstrap-theme.min.css`
 
-To ensure certain functions such as dropdowns, tooltips as well as popovers  work you will also have to import the minified JS file onto your project. You can find the minified JS file to link to your own project via this path:
+To ensure certain functions such as dropdowns, tooltips as well as popovers  work you will also have to import the minified JS file onto your project. You can find the minified JS file to link to your own project via this [path](dist/css/bootstrap-theme.min.js):
 
 `dist/js/bootstrap-theme.min.js`
+
+You can add the refernces to external style sheet as well as the JS file inside `<link>` and `<script>` tags within the head section.
+
+- It it worth noting that your path may be different depending on your project strcuture 
+
+```html
+<head>
+...
+    <script defer="defer" src="js/bootstrap-theme.min.js"></script>
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+```
 
 ## Theme Developers
 
@@ -66,6 +78,6 @@ To see a list of changes made during the migration refer to the [CHANGELOG](CHAN
 
 ## Exsisting Project Migration
 
-If you find your self needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful. This depicts almost all of the classes and changes required for the migration from version 4 to version 5.
+If you find your self needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful. This depicts almost all of the classes and changes required for the migration from version 4 to version 5. Which you can refer to and opt in for search and replace where necessary.
 
 If you need to add or change utilities you can refer to the official [bootstrap migration](https://getbootstrap.com/docs/5.3/migration/) guide for a complete list of changes as well as a complete list of class names that have been changed or depreated. 
