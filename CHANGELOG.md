@@ -1,6 +1,8 @@
 # Changelog
 
-## 1.0.1
+## 1.0.0
+
+## SCSS Changes
 
 ### Navbar
 
@@ -31,7 +33,7 @@
 - webpack.config.js →  `file-loader` has been deprecated, `assest-modules` are recommended
     -  `Rule.generator.filename` property is used instead to specify the path output and the correct file name.
 
-## 1.0.0
+## HTML Changes
 
 ### Navbar content
 
