@@ -1,3 +1,4 @@
+
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Lifecycle:Experimental](https://img.shields.io/badge/Lifecycle-Experimental-339999)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 
@@ -17,11 +18,11 @@ and [mygovbc-bootstrap-theme](https://github.com/bcgov/mygovbc-bootstrap-theme).
 We combined the best of all projects and leverage the latest
 [Bootstrap](http://getbootstrap.com/) version.
 
-## Direct Usage
+## Usage
 
 - ### Direct Integration with Minified Files
 
-    you can directly use the minified CSS and JS files in your project. The minified CSS file to link can be found via this [path](dist/css/bootstrap-theme.min.css):
+    You can directly use the minified CSS and JS files in your project. The minified CSS file to link can be found via this [path](dist/css/bootstrap-theme.min.css):
 
     `dist/css/bootstrap-theme.min.css`
 
@@ -41,13 +42,13 @@ We combined the best of all projects and leverage the latest
 
 - ### SCSS To Modify Variables/Themes
 
-    If you find yourself wanting to enhance or fix the theme you'll be interested in reading this section on how to setup this source on your local device.
+    This section describes how to change the theme or remove unneeded CSS
 
     - #### Tool Setup
 
-        You'll need the following tools installed on your device to begin working on the theme:
+        You'll need the following tools installed on your device:
         
-        [NodeJS 20 LTS](https://nodejs.org/en/) or greater with NPM 10 or greater to build
+        * [NodeJS 20 LTS+](https://nodejs.org/en/) with NPM 10+ to build
 
     - #### First Install
 
@@ -65,32 +66,20 @@ We combined the best of all projects and leverage the latest
         npm run build
         ```    
 
-        Or for continuous building and real-time style updates:
+        Or for continuous building and real-time updates as you make changes:
 
         ```bash
         npm start
         ```        
 
-- ### Migration Guide
+- ### Migration Guide From Version 4 to 5
 
-    If you find yourself needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful.
+    The [CHANGELOG](CHANGELOG.md) outlines the majority of classes and changes needed for migration, allowing you to easily refer to and perform search and replace where necessary.
 
-    It outlines the majority of classes and changes needed for migration, allowing you to easily refer to and perform search and replace where necessary.
-
-    If you need to add or modify utilities, you can consult the official [bootstrap migration guide](https://getbootstrap.com/docs/5.3/migration/) for a comprehensive list of changes. This guide includes updated class names and deprecated ones for your reference.
+    If you need to add or modify utilities, you can consult the official [bootstrap migration guide](https://getbootstrap.com/docs/5.3/migration/) for a comprehensive list of changes.
 
 ## Extending the Theme
 
-If you would like to enhance or fix the theme you can refer to initial setup sequence and simply run the following commands:
+Refer to the [official Bootstrap documentation](https://getbootstrap.com/docs/5.3/extend/approach/) to learn about extending or enhancing this theme. 
 
-To build the styles, JavaScript and other assets, use:
-
-```bash
-npm run build
-```    
-
-Or for continuous building and real-time style updates, use:
-
-```bash
-npm start
-```     
+Tooling and build follow the same steps as [SCSS To Modify Variables/Themes section](#SCSS To Modify Variables/Themes)
