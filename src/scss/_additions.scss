@@ -1,0 +1,72 @@
+//---------------------------------------------------------------------------------------
+// Additions are for extra classes not found in the normal Bootstrap
+// WARNING: Do not create alot of new things here, remember always try to tweak and variable
+// or override bootstrap css before trying to create something new.
+//---------------------------------------------------------------------------------------
+// sass-lint:disable force-element-nesting, force-pseudo-nesting
+
+// The label element is no longer bolded by default, neither is this class defined
+.form-label {
+  font-weight: 700;
+}
+
+// Option to keep footer at the bottom of the page
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-up($breakpoint) {
+    // Set on html element to keep footer at bottom of window short pages
+    
+      body, .fill-body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      // Apply to extra container element(s) around the main
+      .fill-body {
+        flex: 1;
+      }
+      header, .header, footer, .footer {
+        flex: none;
+      }
+      main, .main {
+        flex: 1;
+        overflow: auto;
+      }
+    
+  }
+}
+
+$info-alert-border-level: -4;
+
+//Theme-color function is initizled as it was dropped with version 5 migration
+@function theme-color($color-name){
+    @return map-get($map: $theme-colors, $key: $color-name);
+}
+
+// Add panel-success, panel-info etc. equivalents (like bootstrap v3)
+@each $color, $value in (primary, secondary, success, info, warning, danger) {
+    .card-#{$color} {
+      border-color: theme-color($color);
+      > .card-header{
+        background-color: tint-color(theme-color($color),85%);
+        color: tint-color(theme-color($color),0.5%);
+      }
+      > .card-footer{
+        border-color: theme-color($color);
+      }
+    }
+}
+
+// Light text on dark header, with dark border. When you really want to look like the
+// old default panel class
+.card-default {
+  border-color: theme-color(primary);
+  > .card-header {
+    background: theme-color(primary);
+    border-color: theme-color(primary);
+    color: theme-color(light);
+  }
+  > .card-footer {
+    border-color: theme-color(primary);
+  }
+}

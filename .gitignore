@@ -1,4 +1,2 @@
-/node_modules
-/_gh_pages
-/npm-debug.log
-.jekyll-metadata
+node_modules
+.vs
