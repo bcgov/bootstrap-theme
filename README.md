@@ -17,67 +17,80 @@ and [mygovbc-bootstrap-theme](https://github.com/bcgov/mygovbc-bootstrap-theme).
 We combined the best of all projects and leverage the latest
 [Bootstrap](http://getbootstrap.com/) version.
 
-## For New Developers
+## Direct Usage
 
-If you find yourself wanting to use the theme in your project outright, you can use the minified CSS file as you would like. You can find the minified CSS file to link to your own project via this [path](dist/css/bootstrap-theme.min.css):
+- ### Direct Integration with Minified Files
 
-`dist/css/bootstrap-theme.min.css`
+    you can directly use the minified CSS and JS files in your project. The minified CSS file to link can be found via this [path](dist/css/bootstrap-theme.min.css):
 
-To ensure certain functions such as dropdowns, tooltips as well as popovers  work you will also have to import the minified JS file onto your project. You can find the minified JS file to link to your own project via this [path](dist/js/bootstrap-theme.min.js):
+    `dist/css/bootstrap-theme.min.css`
 
-`dist/js/bootstrap-theme.min.js`
+    To ensure dropdowns, tooltips, and popovers function properly, you can import the minified JS file into your project. which can be found via this [path](dist/js/bootstrap-theme.min.js):
 
-You can add the references to external style sheet as well as the JS file inside `<link>` and `<script>` tags within the head section.
+    `dist/js/bootstrap-theme.min.js`
 
-- It it worth noting that your path may be different depending on your project structure 
+    These files can be added to your project's `<head>` section:
 
-```html
-<head>
-...
-    <script defer="defer" src="js/bootstrap-theme.min.js"></script>
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-</head>
-```
+    ```html
+    <head>
+    ...
+        <script defer="defer" src="js/bootstrap-theme.min.js"></script>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    </head>
+    ```
 
-## Theme Developers
+- ### SCSS To Modify Variables/Themes
 
-If you find yourself wanting to enhance or fix the theme you'll be interested reading this
-section on how to setup this source on your local device.
+    If you find yourself wanting to enhance or fix the theme you'll be interested in reading this section on how to setup this source on your local device.
 
-### Tools Setup
+    - #### Tool Setup
 
-You'll need the following tools installed on your device to begin working on the theme:
+        You'll need the following tools installed on your device to begin working on the theme:
+        
+        [NodeJS 20 LTS](https://nodejs.org/en/) or greater with NPM 10 or greater to build
 
-- [NodeJS 20 LTS](https://nodejs.org/en/) or greater with NPM 10 or greater to build
+    - #### First Install
 
-### First Install
+        After your tools are in place, you should install some packages. In the working directory:
 
-After your tools are in place, you should install some packages. In the working directory:
+        ```bash
+        npm install
+        ```
 
-```bash
-npm install
-```
+    - #### Building Dist
 
-### Building Dist
+        To build the styles, JavaScript and other assets, use:
+
+        ```bash
+        npm run build
+        ```    
+
+        Or for continuous building and real-time style updates:
+
+        ```bash
+        npm start
+        ```        
+
+- ### Migration Guide
+
+    If you find yourself needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful.
+
+    It outlines the majority of classes and changes needed for migration, allowing you to easily refer to and perform search and replace where necessary.
+
+    If you need to add or modify utilities, you can consult the official [bootstrap migration guide](https://getbootstrap.com/docs/5.3/migration/) for a comprehensive list of changes. This guide includes updated class names and deprecated ones for your reference.
+
+## Extending the Theme
+
+If you would like to enhance or fix the theme you can refer to initial setup sequence and simply run the following commands:
 
 To build the styles, JavaScript and other assets, use:
 
 ```bash
 npm run build
-```
+```    
 
-Or for continous building:
+Or for continuous building and real-time style updates, use:
 
 ```bash
 npm start
-```
-
-### ChangeLog
-
-To see a list of changes made during the migration refer to the [CHANGELOG](CHANGELOG.md)
-
-## Exsisting Project Migration
-
-If you find yourself needing to migrate from Version 4 to Version 5, you will find the [CHANGELOG](CHANGELOG.md) useful. This depicts almost all of the classes and changes required for the migration from version 4 to version 5. Which you can refer to and opt in for search and replace where necessary.
-
-If you need to add or change utilities you can refer to the official [bootstrap migration](https://getbootstrap.com/docs/5.3/migration/) guide for a complete list of changes as well as a complete list of class names that have been changed or deprecated. 
+```     

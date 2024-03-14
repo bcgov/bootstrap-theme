@@ -22,17 +22,26 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.html'
+      template: './src/index.html',
+      minify: {
+        collapseWhitespace: false // to ensure that the exported html file is not minified
+      }
     }),
   
     new HtmlWebpackPlugin({
       filename: 'demo.html',
-      template: './src/demo.html'
+      template: './src/demo.html',
+      minify: {
+        collapseWhitespace: false
+      }
     }),
 
     new HtmlWebpackPlugin({
       filename: 'introduction.html',
-      template: './src/introduction.html'
+      template: './src/introduction.html',
+      minify: {
+        collapseWhitespace: false
+      }
     }),
     
     //new HtmlWebpackPlugin({ template: './src/index.html' }),

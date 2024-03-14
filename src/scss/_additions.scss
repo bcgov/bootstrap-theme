@@ -10,16 +10,6 @@
   font-weight: 700;
 }
 
-/* NOT REQUIRED, default behavior in version 5 denotes there's no background color with breadcrumbs
-// Remove background and left padding on page breadcrumbs
-.breadcrumb.page-breadcrumb {
-  background: transparent;
-  margin-bottom: 10px;
-  margin-top: -5px;
-  padding-left: 0;
-}
-*/
-
 // Option to keep footer at the bottom of the page
 @each $breakpoint in map-keys($grid-breakpoints) {
   $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

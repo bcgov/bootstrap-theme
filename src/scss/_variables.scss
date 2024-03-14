@@ -14,8 +14,6 @@ $theme-colors: (
   dark: #212529, // new entries
 );
 
-//$theme-colors: map-merge($theme-colors,$custom-colors );
-
 //Theme-color function is initizled as it was dropped with version 5 migration
 @function theme-color($color-name){
   @return map-get($map: $theme-colors, $key: $color-name);
