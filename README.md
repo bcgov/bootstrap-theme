@@ -55,6 +55,8 @@ We combined the best of all projects and leverage the latest
         After your tools are in place, you should install some packages. In the working directory:
 
         ```bash
+        git clone https://github.com/anjanak13/bootstrap-theme.git
+        cd bootstrap-theme
         npm install
         ```
 
@@ -82,4 +84,4 @@ We combined the best of all projects and leverage the latest
 
 Refer to the [official Bootstrap documentation](https://getbootstrap.com/docs/5.3/extend/approach/) to learn about extending or enhancing this theme. 
 
-Tooling and build follow the same steps as [SCSS To Modify Variables/Themes section](#SCSS To Modify Variables/Themes)
+Tooling and build follow the same steps as [SCSS To Modify Variables/Themes section](#scss-to-modify-variablesthemes)
