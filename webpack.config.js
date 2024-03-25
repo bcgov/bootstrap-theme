@@ -1,77 +1,94 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+'use strict'
+
+const path = require('path')
+const autoprefixer = require('autoprefixer')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const miniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  context: __dirname + "/src",
+  mode: 'development',
+  entry: ['./src/js/bootstrap-theme.js', './src/scss/bootstrap-theme.scss'],
+  output: { 
+    filename: 'js/bootstrap-theme.min.js',
+    path: path.resolve(__dirname, 'dist'),
+    //assetModuleFilename: '../fonts/bc-sans/[hash][ext][query]' // move fonts into local directory, file loader deprecated
 
-  entry: ['./bootstrap-theme.js', './styles/bootstrap-theme.scss'],
-
-  output: {
-    path: __dirname + "/dist",
-    publicPath: '../',
-    filename: 'js/bootstrap-theme.min.js'
   },
-  module: {
+  devServer:{
+    static: path.resolve(__dirname, 'dist'),
+    port: 8080,
+    hot: true
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/index.html',
+      minify: {
+        collapseWhitespace: false // to ensure that the exported html file is not minified
+      }
+    }),
+  
+    new HtmlWebpackPlugin({
+      filename: 'demo.html',
+      template: './src/demo.html',
+      minify: {
+        collapseWhitespace: false
+      }
+    }),
 
+    new HtmlWebpackPlugin({
+      filename: 'introduction.html',
+      template: './src/introduction.html',
+      minify: {
+        collapseWhitespace: false
+      }
+    }),
+    
+    //new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new miniCssExtractPlugin({
+      filename: 'css/bootstrap-theme.min.css',
+    })
+  
+  ],
+  module: {
     rules: [
-      // loader for regular css files
-      {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
-          'postcss-loader',
-        ],
+       // move fonts into local directory
+       {
+        test      : /\.(otf|ttf|eot|woff|woff2|svg)$/,
+        type      : 'asset/resource',
+        generator : {
+          filename : 'fonts/bc-sans/[name][ext][query]',
+        }
       },
-      // scss loader for webpack
+
       {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { sourceMap: true, importLoaders: 1 } },
-          { loader: 'sass-loader', options: { sourceMap: true } },
-        ],
-      },
-      // move fonts into local directory
-      {
-        test: /\.(otf|ttf|eot|woff|woff2|svg)$/,
+        test: /\.(scss)$/,
         use: [
           {
-            loader: 'file-loader',
+            // Extracts CSS for each JS file that includes CSS
+            loader: miniCssExtractPlugin.loader
+          },
+          {
+            // Interprets `@import` and `url()` like `import/require()` and will resolve them
+            loader: 'css-loader'
+          },
+          {
+            // Loader for webpack to process CSS with PostCSS
+            loader: 'postcss-loader',
             options: {
-              name: '[path][name].[ext]',
-              debug: true
+              postcssOptions: {
+                plugins: [
+                  autoprefixer
+                ]
+              }
             }
+          },
+          {
+            // Loads a SASS/SCSS file and compiles it to CSS
+            loader: 'sass-loader'
           }
         ]
       }
     ]
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'css/bootstrap-theme.min.css',
-    }),
-    // We just copy these because the client may have already a dependency or choose a different JS package
-    new CopyWebpackPlugin([
-      {
-        from: 'fonts',
-        to: 'fonts'
-      },
-      {
-        from: 'images',
-        to: 'images'
-      },
-      {
-        from: 'styles',
-        to: 'scss'
-      }
-    ]),
-    new CleanWebpackPlugin({
-      verbose: true,
-      dry: false
-    }),
-  ],
-};
-
+  }
+}

@@ -1,0 +1,130 @@
+//---------------------------------------------------------------------------------------
+// Overrides Bootstrap classes are change here, consider changing a variable before
+// overriding classes.
+//---------------------------------------------------------------------------------------
+// Reference: http://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/web-content-development-guides/developers-guide/css-elements
+// sass-lint:disable force-element-nesting, force-pseudo-nesting
+
+.nav-link,
+.navbar-brand,
+.page-link,
+a.btn {
+  text-decoration: none;
+}
+
+// Hover mixin and `$enable-hover-media-query` are deprecated.
+// For backward compatibility
+@mixin hover() {
+  &:hover { @content; }
+}
+
+@mixin hover-focus() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin plain-hover-focus() {
+  &,
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin hover-focus-active() {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+
+.nav-tabs .nav-link:not(.active) {
+    @include hover-focus {
+      background-color: $control-link-bg;
+      border-color: $control-link-border-color;
+      color: $control-link-color;
+    }
+}
+
+// Add focus ring to btn-link, highlight as regular link
+.btn.btn-link {
+  text-decoration: underline;
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 $btn-focus-width $btn-link-outline-color;
+    color: $link-hover-color;
+  }
+}
+
+.btn{
+  &.focus{
+    border: 5px solid;  
+  }
+
+}
+
+
+
+// Underline navbar links when active
+.navbar-nav .nav-link {
+  @include hover-focus {
+    text-decoration: underline;
+  }
+}
+
+
+.list-group .list-group-item-action {
+  @include hover-focus {
+    text-decoration: underline;
+  }
+}
+
+// Add spacing around content (use p-* to override)
+main {
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+
+//Theme-color function is initizled as it was dropped with version 5 migration
+@function theme-color($color-name){
+    @return map-get($map: $theme-colors, $key: $color-name);
+}
+
+// Header, adds the gold bottom border and shadow
+header nav {
+    background-color: theme-color(primary-nav);
+    border-bottom: 2px solid theme-color(bcgold);
+    &.shadow {
+      box-shadow: 0 3px 3px 1px $header-box-shadow-color;
+    }
+}
+
+// Set footer background, add gold border above
+footer nav {
+    background-color: theme-color(primary-nav);
+    border-top: 2px solid theme-color(bcgold);
+}
+
+// Only sibling list items in footer get left border
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  footer .navbar-expand#{$infix} .nav-item + .nav-item {
+    @include media-breakpoint-up($breakpoint) {
+      border-left: 1px solid $footer-separator-color;
+    }
+  }
+}
+
+// Stronger border colour
+.alert.alert-info {
+  border-color: color-level(info, -4);
+}
+.alert.alert-warning {
+  border-color: color-level(warning, -4);
+}
+
