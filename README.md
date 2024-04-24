@@ -1,7 +1,8 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Lifecycle:Retired](https://img.shields.io/badge/Lifecycle-Retired-d45500)](https://github.com/bcgov/repomountie/blob/master/doc/lifecycle-badges.md)
 
-> [!WARNING] This repository is Archived as of April 24, 2024. It has not been updated or maintained for several years. Anyone wishing to use Bootstrap for a B.C. govenerment application may wish to explore [this alternative](https://github.com/bcgov/bootstrap-v5-theme) that is based on a newer version of Bootstrap. Teams may also wish to familiarize themselves with the [B.C. Design System](https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/design-system/about-the-design-system/).
+> [!WARNING]
+> This repository is Archived as of April 24, 2024. It has not been updated or maintained for several years. Anyone wishing to use Bootstrap for a B.C. govenerment application may wish to explore [this alternative](https://github.com/bcgov/bootstrap-v5-theme) that is based on a newer version of Bootstrap. Teams may also wish to familiarize themselves with the [B.C. Design System](https://developer.gov.bc.ca/docs/default/component/bc-developer-guide/design-system/about-the-design-system/).
 
 # 🚀 Government of British Columbia Bootstrap v4 Theme
 
