@@ -16,7 +16,7 @@ For the moment, the theme package can be installed using something like this in 
 
 ```json
 "devDependencies": {
-  "@bcgov/bootstrap-theme": "https://github.com/bcgov/bootstrap-theme/releases/download/v1.1.1/bcgov-bootstrap-theme-1.1.1.tgz",
+  "@bcgov/bootstrap-theme": "https://github.com/bcgov/bootstrap-theme/releases/download/v1.1.4/bcgov-bootstrap-theme-1.1.4.tgz",
   "bootstrap": "~4.3.1",
 }
 ```
@@ -28,20 +28,20 @@ of Bootstrap functions and mixins. The SCSS source can be included using the fol
 
 ```scss
 $bcgov-font-path: "../node_modules/@bcgov/bootstrap-theme/dist/fonts/";
-@import "~@bcgov/bootstrap-theme/dist/scss/bootstrap-theme";
+@import "@bcgov/bootstrap-theme/dist/scss/bootstrap-theme";
 ```
 
 SCSS variables and mixins defined by Bootstrap and the theme can be imported independent of
 any display rules for use in isolated components:
 
 ```scss
-@import "~@bcgov/bootstrap-theme/dist/scss/common";
+@import "@bcgov/bootstrap-theme/dist/scss/common";
 ```
 
 Generated CSS can be imported using the following (paths may vary):
 
 ```css
-@import "~@bcgov/bootstrap-theme/dist/css/bootstrap-theme.min.css";
+@import "@bcgov/bootstrap-theme/dist/css/bootstrap-theme.min.css";
 ```
 
 ## Javascript support
